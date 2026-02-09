@@ -25,7 +25,7 @@ $input = json_decode(file_get_contents('php://input'), true);
 $token = $input['token'] ?? '';
 $amount = isset($input['amountInCents']) ? (int)$input['amountInCents'] : 0;
 $currency = $input['currency'] ?? 'ZAR';
-$description = $input['description'] ?? 'GoToGuys Order';
+$description = $input['description'] ?? 'SHOCKWAVE Order';
 
 if (!$token || !$amount) {
     http_response_code(400);
