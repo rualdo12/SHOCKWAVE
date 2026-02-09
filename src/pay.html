@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment - GoToGuys</title>
+    <script src="https://js.yoco.com/sdk/v1/yoco-sdk-web.js"></script>
+    <style>
+        body {
+            background-color: #111111;
+            color: #ffffff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loader {
+            border: 4px solid #333;
+            border-top: 4px solid #FDBE33; /* Custom Yellow */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        h2 { margin-bottom: 10px; }
+        p { color: #888; }
+        .cancel-btn {
+            margin-top: 30px;
+            background: transparent;
+            border: 1px solid #444;
+            color: #888;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .cancel-btn:hover { border-color: #fff; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <h2>Initializing Secure Payment...</h2>
+    <p>Please do not close this window.</p>
+    
+    <a href="/" class="cancel-btn">Cancel & Return to Store</a>
+
+    <script>
+        // 1. Get parameters from the URL
+        const params = new URLSearchParams(window.location.search);
+        const amount = params.get('amount'); // Amount in CENTS
+        const name = params.get('name') || 'Guest';
+        
+        // 2. Your Public Key (safe to expose)
+        const publicKey = 'pk_live_8c4f68210qv30Ole46b4'; 
+
+        if (!amount) {
+            document.querySelector('h2').innerText = "Error: Invalid Amount";
+            document.querySelector('.loader').style.display = 'none';
+        } else {
+            // 3. Launch Yoco immediately
+            const yoco = new window.YocoSDK({ publicKey: publicKey });
+            
+            yoco.showPopup({
+                amountInCents: amount,
+                currency: 'ZAR',
+                name: 'GoToGuys Checkout',
+                description: 'Order for ' + name,
+                callback: async function(result) {
+                    if (result.error) {
+                        if (result.error.message === "Popup closed") {
+                             window.location.href = "/"; // Go back home/cart
+                        } else {
+                             alert("Payment Error: " + result.error.message);
+                             window.location.href = "/";
+                        }
+                        return;
+                    }
+
+                    // SUCCESS FROM POPUP — now confirm on server using secret key
+                    try {
+                        const response = await fetch('/api/yoco-charge.php', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                token: result.id,
+                                amountInCents: Number(amount),
+                                currency: 'ZAR',
+                                description: 'Order for ' + name
+                            })
+                        });
+
+                        const charge = await response.json();
+                        if (!response.ok || charge.error) {
+                            alert('Payment failed: ' + (charge.error || 'Unable to process charge'));
+                            window.location.href = '/';
+                            return;
+                        }
+
+                        // Redirect back with confirmed payment id from server
+                        const chargeId = charge.id || charge.chargeId || result.id;
+                        window.location.href = "/?payment_success=true&id=" + encodeURIComponent(chargeId);
+                    } catch (err) {
+                        alert('Payment failed: ' + (err?.message || 'Server error'));
+                        window.location.href = '/';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
