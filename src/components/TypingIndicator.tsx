@@ -6,9 +6,9 @@ const TypingIndicator: React.FC = () => {
     <div className="flex justify-start">
       <div className="rounded-2xl rounded-bl-lg border border-[#2a2a2a] bg-[#1d1d1d] px-4 py-2">
         <div className="flex items-center justify-center space-x-1">
-          <div className="h-2 w-2 animate-bounce rounded-full bg-[#FDBE33] [animation-delay:-0.3s]"></div>
-          <div className="h-2 w-2 animate-bounce rounded-full bg-[#FDBE33] [animation-delay:-0.15s]"></div>
-          <div className="h-2 w-2 animate-bounce rounded-full bg-[#FDBE33]"></div>
+          <div className="h-2 w-2 animate-bounce rounded-full bg-[#D4AF37] [animation-delay:-0.3s]"></div>
+          <div className="h-2 w-2 animate-bounce rounded-full bg-[#D4AF37] [animation-delay:-0.15s]"></div>
+          <div className="h-2 w-2 animate-bounce rounded-full bg-[#D4AF37]"></div>
         </div>
       </div>
     </div>

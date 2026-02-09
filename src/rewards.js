@@ -8,7 +8,7 @@ export const VALID_STAMP_CODES = [
   { id: 'TIER6', displayName: 'Tier 6', description: 'Reward Tier 6' },
 ];
 
-export const STAMP_STORAGE_KEY = 'gotoguysStampRewards';
+export const STAMP_STORAGE_KEY = 'SHOCKWAVEStampRewards';
 export const REQUIRED_STAMP_COUNT = 6;
 export const STAMP_DEFAULT_STATE = {
   collectedStamps: [],

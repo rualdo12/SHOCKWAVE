@@ -29,7 +29,7 @@ const Chatbot: React.FC = () => {
 
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="group mt-3 flex h-14 w-14 items-center justify-center rounded-full border border-[#2b2b2b] bg-[#0f0f0f] text-white shadow-[0_14px_32px_rgba(0,0,0,0.45)] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-[#FDBE33] hover:text-[#FDBE33] focus:outline-none focus:ring-2 focus:ring-[#FDBE33]/40"
+        className="group mt-3 flex h-14 w-14 items-center justify-center rounded-full border border-[#2b2b2b] bg-[#0f0f0f] text-white shadow-[0_14px_32px_rgba(0,0,0,0.45)] transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-[#D4AF37] hover:text-[#D4AF37] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/40"
         aria-label={isOpen ? 'Close chat' : 'Open chat'}
       >
         {isOpen ? <CloseIcon /> : <ChatIcon />}

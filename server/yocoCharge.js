@@ -19,7 +19,7 @@ if (!YOCO_SECRET_KEY) {
  */
 export async function yocoChargeHandler(req, res) {
   try {
-    const { token, amountInCents, currency = 'ZAR', description = 'GoToGuys Order' } = req.body || {};
+    const { token, amountInCents, currency = 'ZAR', description = 'SHOCKWAVE Order' } = req.body || {};
 
     if (!token || !amountInCents) {
       return res.status(400).json({ error: 'Missing token or amount' });

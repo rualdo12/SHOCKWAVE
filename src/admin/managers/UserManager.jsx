@@ -45,7 +45,7 @@ const UserManager = () => {
       description="Create accounts and update roles. Password required only for new accounts."
       onCreate={() => { setForm(empty); setStatus(''); }}
     >
-      {status && <div className="text-sm text-custom-yellow mb-2">{status}</div>}
+      {status && <div className="text-sm text-custom-gold mb-2">{status}</div>}
       <div className="glass-card p-4 rounded-lg border border-gray-700 space-y-3">
         <input className="w-full bg-gray-800 text-white px-3 py-2 rounded"
           placeholder="Email" value={form.email}
@@ -58,7 +58,7 @@ const UserManager = () => {
           <option value="admin">admin</option>
           <option value="user">user</option>
         </select>
-        <button onClick={save} className="bg-custom-yellow text-black px-4 py-2 rounded font-bold">Save</button>
+        <button onClick={save} className="bg-custom-gold text-black px-4 py-2 rounded font-bold">Save</button>
       </div>
 
       <div className="grid md:grid-cols-2 gap-3 mt-4">

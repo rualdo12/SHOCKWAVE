@@ -13,7 +13,7 @@ const QuickReplies: React.FC<QuickRepliesProps> = ({ replies, onClick }) => {
         <button
           key={reply}
           onClick={() => onClick(reply)}
-          className="rounded-full border border-[#2a2a2a] bg-[#141414] px-3 py-1.5 text-sm font-medium text-gray-200 transition hover:border-[#FDBE33] hover:text-[#FDBE33]"
+          className="rounded-full border border-[#2a2a2a] bg-[#141414] px-3 py-1.5 text-sm font-medium text-gray-200 transition hover:border-[#D4AF37] hover:text-[#D4AF37]"
         >
           {reply}
         </button>

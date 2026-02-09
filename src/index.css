@@ -42,13 +42,13 @@
   font-style: italic;
 }
 .rich-text-content blockquote {
-  border-left: 3px solid #facc15;
+  border-left: 3px solid #d4af37;
   padding-left: 0.75rem;
   margin: 0.8rem 0;
   color: #f3f4f6;
 }
 .rich-text-content a {
-  color: #facc15;
+  color: #d4af37;
   text-decoration: underline;
 }
 .rich-text-content img {

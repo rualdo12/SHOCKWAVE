@@ -81,7 +81,7 @@ const ShopManager = () => {
       description="Manage products that feed the storefront."
       onCreate={() => { setEditing('new'); setForm(empty); setStatus(''); }}
     >
-      {status && <div className="text-sm text-custom-yellow">{status}</div>}
+      {status && <div className="text-sm text-custom-gold">{status}</div>}
       {editing && (
         <div className="glass-card p-4 rounded-lg border border-gray-700 space-y-3">
           <input className="w-full bg-gray-800 text-white px-3 py-2 rounded" placeholder="Name"
@@ -107,7 +107,7 @@ const ShopManager = () => {
           <input className="w-full bg-gray-800 text-white px-3 py-2 rounded" placeholder="Stock"
             value={form.stock} onChange={(e) => setForm({ ...form, stock: e.target.value })} />
           <div className="flex gap-2 items-center">
-            <button onClick={save} className="bg-custom-yellow text-black px-4 py-2 rounded font-bold">Save</button>
+            <button onClick={save} className="bg-custom-gold text-black px-4 py-2 rounded font-bold">Save</button>
             <button onClick={() => setEditing(null)} className="px-4 py-2 rounded border border-gray-700">Cancel</button>
             {uploading && <span className="text-xs text-gray-400">Uploading...</span>}
           </div>
@@ -120,10 +120,10 @@ const ShopManager = () => {
             <div className="flex justify-between">
               <div>
                 <h3 className="text-xl font-bold">{item.name}</h3>
-                <p className="text-sm text-custom-yellow">R {item.price}</p>
+                <p className="text-sm text-custom-gold">R {item.price}</p>
               </div>
               <div className="space-x-2 text-sm">
-                <button onClick={() => { setEditing(item.id); setForm(item); }} className="text-custom-yellow">Edit</button>
+                <button onClick={() => { setEditing(item.id); setForm(item); }} className="text-custom-gold">Edit</button>
                 <button onClick={() => remove(item.id)} className="text-red-400">Delete</button>
               </div>
             </div>

@@ -10,7 +10,7 @@ const ManagerShell = ({ title, description, children, onCreate }) => (
       {onCreate && (
         <button
           onClick={onCreate}
-          className="px-4 py-2 rounded bg-custom-yellow text-black font-bold hover:bg-white transition"
+          className="px-4 py-2 rounded bg-custom-gold text-black font-bold hover:bg-white transition"
         >
           New
         </button>

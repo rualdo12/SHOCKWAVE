@@ -64,7 +64,7 @@ const RichTextEditor = ({ label, value, onChange, placeholder, minHeight = '120p
         contentEditable
         suppressContentEditableWarning
         onInput={onInput}
-        className="w-full bg-gray-800 text-white px-3 py-2 rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-custom-yellow/60 focus:border-custom-yellow/40 leading-relaxed rich-text-area"
+        className="w-full bg-gray-800 text-white px-3 py-2 rounded border border-gray-700 focus:outline-none focus:ring-2 focus:ring-custom-gold/60 focus:border-custom-gold/40 leading-relaxed rich-text-area"
         style={{ minHeight }}
         data-placeholder={placeholder}
       />
@@ -158,7 +158,7 @@ const BlogManager = () => {
       description="Create, edit, and delete blog posts. Updates are live."
       onCreate={startCreate}
     >
-      {status && <div className="text-sm text-custom-yellow">{status}</div>}
+      {status && <div className="text-sm text-custom-gold">{status}</div>}
 
       {editing && (
         <div className="glass-card p-4 rounded-lg border border-gray-700 space-y-3">
@@ -204,7 +204,7 @@ const BlogManager = () => {
             label="Use the toolbar for headings, bullets, and emphasis."
           />
           <div className="flex gap-2">
-            <button onClick={save} className="bg-custom-yellow text-black px-4 py-2 rounded font-bold">
+            <button onClick={save} className="bg-custom-gold text-black px-4 py-2 rounded font-bold">
               Save
             </button>
             <button onClick={() => setEditing(null)} className="px-4 py-2 rounded border border-gray-700">
@@ -224,7 +224,7 @@ const BlogManager = () => {
                 <p className="text-xs text-gray-400">{item.category}</p>
               </div>
               <div className="space-x-2 text-sm">
-                <button onClick={() => startEdit(item)} className="text-custom-yellow">Edit</button>
+                <button onClick={() => startEdit(item)} className="text-custom-gold">Edit</button>
                 <button onClick={() => remove(item.id)} className="text-red-400">Delete</button>
               </div>
             </div>

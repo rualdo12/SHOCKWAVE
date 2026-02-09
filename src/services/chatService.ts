@@ -24,7 +24,7 @@ const FALLBACK_RESPONSES: Array<{ match: RegExp; response: string }> = [
   {
     match: /contact|email|call/i,
     response:
-      'You can reach the GoToGuys team via the Contact section on the site. I can also collect your name and project details to pass along.',
+      'You can reach the SHOCKWAVE team via the Contact section on the site. I can also collect your name and project details to pass along.',
   },
 ];
 
@@ -32,7 +32,7 @@ const defaultResponse =
   'Happy to help. Tell me a bit about your project (type of shoot, location, and timing) and I will point you to the next step.';
 
 // Optional backend proxy endpoint; keeps API keys out of the client bundle.
-const endpoint = import.meta.env.VITE_GOTOGUYS_AI_ENDPOINT as string | undefined;
+const endpoint = import.meta.env.VITE_SHOCKWAVE_AI_ENDPOINT as string | undefined;
 
 export async function getChatbotResponse(history: Message[], newMessage: string): Promise<string> {
   if (endpoint) {

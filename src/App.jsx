@@ -57,10 +57,10 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import 'leaflet-routing-machine';
 // --- NEW CORRECTED IMPORTS ---
-import logo from './assets/gotoguys-style.png'; 
+import logo from './assets/Website Logo.png';
 
-// 1. The Yellow Lines (Hero Background)
-import yellowLines from './assets/gotoguys-style9.png'; 
+// 1. Hero light trails background
+import goldLines from './assets/Extended-lines.png';
 
 // 2. The CEO (Francois)
 import iconFrancois from './assets/Francois.jpg'; 
@@ -72,16 +72,16 @@ import iconRualdo from './assets/Rualdo.jpg';
 import iconReinart from './assets/Reinart.jpg';
 
 // 3. Cybersecurity Icon
-import iconCyber from './assets/gotoguys-style11.png'; 
+import iconCyber from './assets/Cybersecurity.png';
 
 // 4. Team Picture (About Section)
 import teamPic from './assets/Team.jpg';
 
 // --- OTHER ASSETS (Ensure these exist in your folder) ---
-import iconSocial from './assets/gotoguys-style12.png';
-import iconWeb from './assets/gotoguys-style13.png';
-import iconPrinting from './assets/gotoguys-style15.png';
-import iconPhoto from './assets/gotoguys-style14.png';
+import iconSocial from './assets/Social Marketing.png';
+import iconWeb from './assets/Web Development.png';
+import iconPrinting from './assets/Printing.png';
+import iconPhoto from './assets/Photography.png';
 
 // Portfolio & Blog placeholders
 import frontier1 from './assets/Frontier 1.jpg'
@@ -95,10 +95,10 @@ import ironman3 from './assets/Ironman 3.jpg'
 import ironman4 from './assets/Ironman 4.jpg'
 
 import portfolio1 from './assets/project-1.jpg';
-import portfolio3 from './assets/gotoguys-style7.jpg';
-import blog1 from './assets/gotoguys-style3.jpg';
-import blog2 from './assets/gotoguys-style5.jpg';
-import blog3 from './assets/gotoguys-style6.jpg';
+import portfolio3 from './assets/project-3.jpg';
+import blog1 from './assets/blog-1.jpg';
+import blog2 from './assets/blog-2.jpg';
+import blog3 from './assets/blog-3.jpg';
 
 // Profile Pictures
 import profileSarah from './assets/profile-sarah.png';
@@ -106,15 +106,15 @@ import profileJohn from './assets/profile-john.png';
 import profileJane from './assets/profile-jane.png';
 
 // Locations
-import iconMosselbay from './assets/gotoguys-style5.png';
-import iconGeorge from './assets/gotoguys-style6.png';
-import iconKnysna from './assets/gotoguys-style7.png';
+import iconMosselbay from './assets/Mosselbay.png';
+import iconGeorge from './assets/George.png';
+import iconKnysna from './assets/Knysna.png';
 import iconPlettenberg from './assets/Plettenberg.png';
 import iconHartenbos from './assets/Hartenbos.png';
 
 // Team & Misc
-import graphicCube from './assets/gotoguys-style91.png'; // Verify this is the Cube
-import heroGif from './assets/gotoguys-style.gif'; // Your video
+import graphicCube from './assets/Blueprint.png';
+import heroGif from './assets/Canva 1.png';
 import digitalExcel from './assets/Ironman 2.jpg';
 import Chatbot from "./components/Chatbot";
 // Add this with your other image imports
@@ -127,7 +127,7 @@ const GlobalStyles = () => (
     /* 1. Base Settings - RESTORED TO NORMAL (White Text) */
     body {
         font-family: 'Inter', sans-serif;
-        background-color: #111111;
+        background-color: #06152f;
         color: #ffffff; /* Body text is White again */
         -webkit-font-smoothing: antialiased;
     }
@@ -144,13 +144,13 @@ div[style*="z-index: 2147483647"] {
 }
         
     /* 2. Color Utilities - RESTORED TO NORMAL */
-    .text-custom-yellow { color: #FDBE33 !important; } /* Accents are Yellow */
-    .bg-custom-yellow { background-color: #FDBE33; }
-    .border-custom-yellow { border-color: #FDBE33; }
+    .text-custom-gold { color: #D4AF37 !important; } /* Accents are gold */
+    .bg-custom-gold { background-color: #D4AF37; }
+    .border-custom-gold { border-color: #D4AF37; }
     
-    .bg-custom-dark { background-color: #111111; }
-    .bg-custom-gray { background-color: #1D1D1D; }
-    .bg-custom-card { background-color: #222222; }
+    .bg-custom-dark { background-color: #06152f; }
+    .bg-custom-gray { background-color: #0b1f44; }
+    .bg-custom-card { background-color: #102a57; }
 
     /* Ensure specific white text classes remain white */
     .text-white { color: #ffffff !important; }
@@ -166,7 +166,7 @@ div[style*="z-index: 2147483647"] {
     }
     .glass-card:hover {
       transform: translateY(-10px);
-      border-color: #FDBE33; /* Yellow Border on Hover */
+      border-color: #D4AF37; /* gold Border on Hover */
       box-shadow: 0 0 20px rgba(253, 190, 51, 0.2);
     }
 
@@ -177,7 +177,7 @@ div[style*="z-index: 2147483647"] {
         color: #ffffff; /* Links are White */
         opacity: 0.9; transition: all 0.3s ease;
     }
-    .nav-link:hover, .nav-link.active { opacity: 1; color: #FDBE33; /* Hover is Yellow */ }
+    .nav-link:hover, .nav-link.active { opacity: 1; color: #D4AF37; /* Hover is gold */ }
 
     /* 5. Utility & Animations */
     .hero-bg { background-size: cover; background-position: center; position: relative; }
@@ -234,7 +234,7 @@ div[style*="z-index: 2147483647"] {
       white-space: nowrap;
     }
     .gallery-button {
-      background: #FDBE33;
+      background: #D4AF37;
       color: #111111;
       font-weight: 800;
       letter-spacing: 0.2em;
@@ -275,7 +275,7 @@ div[style*="z-index: 2147483647"] {
       gap: 0.75rem;
     }
     .panel-cta {
-      background: #FDBE33;
+      background: #D4AF37;
       color: #111111;
       font-weight: 800;
       text-transform: uppercase;
@@ -315,7 +315,7 @@ div[style*="z-index: 2147483647"] {
       font-size: 1.75rem;
       font-weight: 800;
       color: #ffffff;
-      border-left: 4px solid #FDBE33;
+      border-left: 4px solid #D4AF37;
       padding-left: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -346,12 +346,12 @@ div[style*="z-index: 2147483647"] {
       background: transparent;
     }
     .portfolio-nav:hover {
-      border-color: #FDBE33;
-      color: #FDBE33;
+      border-color: #D4AF37;
+      color: #D4AF37;
       transform: translateY(-1px);
     }
     .portfolio-row-link {
-      color: #FDBE33;
+      color: #D4AF37;
       font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.25em;
@@ -447,7 +447,7 @@ div[style*="z-index: 2147483647"] {
     .cube { width: 100%; height: 100%; position: static; transform-style: preserve-3d; animation: rotateCube 15s infinite linear; }
     .cube-face {
       position: absolute; width: 50px; height: 50px;
-      border: 4px solid #FDBE33; /* Yellow Borders */
+      border: 4px solid #D4AF37; /* gold Borders */
       background: rgba(253, 190, 51, 0.05);
       box-shadow: 0 0 20px rgba(253, 190, 51, 0.1) inset, 0 0 10px rgba(253, 190, 51, 0.3);
       display: flex; align-items: right;
@@ -467,7 +467,7 @@ div[style*="z-index: 2147483647"] {
     .link-underline { position: relative; display: inline-block; }
     .link-underline::after {
         content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0;
-        background-color: #FDBE33; /* Yellow Underline */
+        background-color: #D4AF37; /* gold Underline */
         transition: width 0.3s ease-out;
     }
     .group:hover .link-underline::after, .link-underline:hover::after { width: 100%; }
@@ -487,7 +487,7 @@ div[style*="z-index: 2147483647"] {
         bottom: -12px; 
         left: 0;
         
-        /* DOUBLE ARCH SVG (Yellow Stroke %23FDBE33) */
+        /* DOUBLE ARCH SVG (gold Stroke %23FDBE33) */
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 25' preserveAspectRatio='none'%3E%3Cpath d='M0 10 Q 50 20 100 10' stroke='%23FDBE33' stroke-width='3' fill='none' stroke-linecap='round' /%3E%3Cpath d='M5 18 Q 50 28 95 18' stroke='%23FDBE33' stroke-width='3' fill='none' stroke-linecap='round' /%3E%3C/svg%3E");
         
         background-repeat: no-repeat; 
@@ -530,7 +530,7 @@ const SignIn = ({ onSignedIn }) => {
   };
 
   return (
-    <div className="glass-card border border-custom-yellow/30 rounded-2xl p-8 text-center space-y-4">
+    <div className="glass-card border border-custom-gold/30 rounded-2xl p-8 text-center space-y-4">
       <h3 className="text-2xl font-bold text-white">Sign in to unlock</h3>
       <p className="text-gray-300 text-sm">
         Verify yourself to claim your reward.
@@ -538,7 +538,7 @@ const SignIn = ({ onSignedIn }) => {
       <button
         onClick={handleSignIn}
         disabled={isLoading}
-        className="w-full bg-custom-yellow text-black font-bold py-3 rounded-lg hover:bg-white transition duration-300 disabled:opacity-60"
+        className="w-full bg-custom-gold text-black font-bold py-3 rounded-lg hover:bg-white transition duration-300 disabled:opacity-60"
       >
         {isLoading ? 'Signing in...' : 'Continue with Google'}
       </button>
@@ -629,12 +629,12 @@ const SignInBlock = ({ onComplete }) => {
   };
 
   return (
-    <div className="glass-card border border-custom-yellow/30 rounded-2xl p-6 space-y-4">
+    <div className="glass-card border border-custom-gold/30 rounded-2xl p-6 space-y-4">
       <h3 className="text-xl font-bold text-white">Sign in to unlock</h3>
       <button
         onClick={handleGoogle}
         disabled={isLoading || !acceptedTerms}
-        className="w-full bg-custom-yellow text-black font-bold py-3 rounded-lg hover:bg-white transition duration-300 disabled:opacity-60"
+        className="w-full bg-custom-gold text-black font-bold py-3 rounded-lg hover:bg-white transition duration-300 disabled:opacity-60"
       >
         {isLoading ? 'Signing in...' : 'Continue with Google'}
       </button>
@@ -669,18 +669,18 @@ const SignInBlock = ({ onComplete }) => {
         <label className="flex items-start gap-2 text-sm text-gray-300">
           <input
             type="checkbox"
-            className="mt-1 accent-custom-yellow"
+            className="mt-1 accent-custom-gold"
             checked={acceptedTerms}
             onChange={(e) => setAcceptedTerms(e.target.checked)}
           />
           <span>
-            I agree to the Terms & Conditions and Privacy Policy and consent to receive GoToGuys updates, service announcements, and offers via email. You can opt out anytime.
+            I agree to the Terms & Conditions and Privacy Policy and consent to receive SHOCKWAVE updates, service announcements, and offers via email. You can opt out anytime.
           </span>
         </label>
         <button
           type="submit"
           disabled={!acceptedTerms}
-          className="w-full border border-custom-yellow text-custom-yellow font-bold py-2 rounded hover:bg-custom-yellow hover:text-black transition duration-300"
+          className="w-full border border-custom-gold text-custom-gold font-bold py-2 rounded hover:bg-custom-gold hover:text-black transition duration-300"
         >
           Continue
         </button>
@@ -709,7 +709,7 @@ const RoutingMachine = ({ userPos, destPos }) => {
 
     const control = L.Routing.control({
       waypoints: [L.latLng(userPos.lat, userPos.lng), L.latLng(destPos.lat, destPos.lng)],
-      lineOptions: { styles: [{ color: '#FDBE33', weight: 6 }] },
+      lineOptions: { styles: [{ color: '#D4AF37', weight: 6 }] },
       addWaypoints: false,
       draggableWaypoints: false,
       fitSelectedRoutes: true,
@@ -751,7 +751,7 @@ const RewardMap = () => {
   }, []);
 
   return (
-    <div className="glass-card border border-custom-yellow/20 rounded-2xl overflow-hidden">
+    <div className="glass-card border border-custom-gold/20 rounded-2xl overflow-hidden">
       <div className="h-[420px] w-full">
         <MapContainer center={cafeVintcent} zoom={14} className="h-full w-full" scrollWheelZoom>
           <TileLayer 
@@ -843,14 +843,14 @@ const RewardClaim = () => {
       <GlobalStyles />
       <main className="flex-grow pt-28 pb-16 px-4">
         <div className="container mx-auto max-w-5xl space-y-10">
-          <div className="glass-card border border-custom-yellow/40 rounded-3xl p-10 md:p-12">
+          <div className="glass-card border border-custom-gold/40 rounded-3xl p-10 md:p-12">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
-                <p className="text-custom-yellow text-sm uppercase tracking-[0.3em] mb-3">
+                <p className="text-custom-gold text-sm uppercase tracking-[0.3em] mb-3">
                   VIP REWARD
                 </p>
                 <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
-                  Claim your free photoshoot at <span className="text-custom-yellow">The Vintcent</span>
+                  Claim your free photoshoot at <span className="text-custom-gold">The Vintcent</span>
                 </h1>
                 <p className="text-gray-300 mt-4">
                   Sign in to unlock your reward and get guided back to Cafe Vintcent.
@@ -875,7 +875,7 @@ const RewardClaim = () => {
 
           {userData && (
             <>
-              <div className="glass-card border border-custom-yellow/25 rounded-3xl p-10 space-y-4">
+              <div className="glass-card border border-custom-gold/25 rounded-3xl p-10 space-y-4">
                 <h2 className="text-3xl font-bold text-white">
                   YouÃ¢â‚¬â„¢ve successfully claimed your free photoshoot at The Vintcent!
                 </h2>
@@ -885,13 +885,13 @@ const RewardClaim = () => {
                 {storeError && <p className="text-red-400 text-sm">{storeError}</p>}
               </div>
 
-              <div className="glass-card border border-custom-yellow/25 rounded-3xl p-10 space-y-6">
+              <div className="glass-card border border-custom-gold/25 rounded-3xl p-10 space-y-6">
                 <div className="flex items-center gap-3">
-                  <svg className="w-10 h-10 text-custom-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-10 h-10 text-custom-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   <div>
-                    <p className="text-sm uppercase tracking-[0.25em] text-custom-yellow">Guided route</p>
+                    <p className="text-sm uppercase tracking-[0.25em] text-custom-gold">Guided route</p>
                     <h3 className="text-2xl font-bold text-white">Get back to Cafe Vintcent</h3>
                     <p className="text-gray-300 text-sm">
                       Live GPS, clear directions, and a highlighted path to keep you on track.
@@ -902,7 +902,7 @@ const RewardClaim = () => {
                 <div className="flex flex-wrap items-center gap-4">
                   <button
                     onClick={() => navigate('/')}
-                    className="bg-custom-yellow text-black font-bold px-6 py-3 rounded-lg hover:bg-white transition duration-300"
+                    className="bg-custom-gold text-black font-bold px-6 py-3 rounded-lg hover:bg-white transition duration-300"
                   >
                     Explore More
                   </button>
@@ -925,7 +925,7 @@ const RewardsHomeLink = () => (
   <div className="flex justify-end">
     <Link
       to="/"
-      className="inline-flex items-center gap-2 text-custom-yellow font-semibold hover:text-white transition"
+      className="inline-flex items-center gap-2 text-custom-gold font-semibold hover:text-white transition"
     >
       <span aria-hidden="true">Ã¢â€ Â</span>
       <span>Back to home</span>
@@ -1099,14 +1099,14 @@ const StampRewardsPage = () => {
         <main className="flex-grow pt-28 pb-16 px-4">
           <div className="container mx-auto max-w-4xl space-y-8">
             <RewardsHomeLink />
-            <div className="glass-card border border-custom-yellow/40 rounded-3xl p-10 md:p-12 space-y-4">
-              <p className="text-custom-yellow text-sm uppercase tracking-[0.3em] mb-3">QR Stamp Rewards</p>
+            <div className="glass-card border border-custom-gold/40 rounded-3xl p-10 md:p-12 space-y-4">
+              <p className="text-custom-gold text-sm uppercase tracking-[0.3em] mb-3">QR Stamp Rewards</p>
               <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
                 Sign in to unlock rewards
               </h1>
               <p className="text-gray-300">
                 Create or sign into your account to access the rewards tracker. Tier 1 is added automatically after you agree to
-                terms and sign in. You also consent to receive GoToGuys updates and offers by email (opt out anytime).
+                terms and sign in. You also consent to receive SHOCKWAVE updates and offers by email (opt out anytime).
               </p>
             </div>
             <SignInBlock onComplete={setAndPersistSession} />
@@ -1122,10 +1122,10 @@ const StampRewardsPage = () => {
       <main className="flex-grow pt-28 pb-16 px-4">
         <div className="container mx-auto max-w-5xl space-y-8">
           <RewardsHomeLink />
-          <div className="glass-card border border-custom-yellow/40 rounded-3xl p-10 md:p-12">
-            <p className="text-custom-yellow text-sm uppercase tracking-[0.3em] mb-3">QR Stamp Rewards</p>
+          <div className="glass-card border border-custom-gold/40 rounded-3xl p-10 md:p-12">
+            <p className="text-custom-gold text-sm uppercase tracking-[0.3em] mb-3">QR Stamp Rewards</p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-              GoToGuys QR Stamp Rewards
+              SHOCKWAVE QR Stamp Rewards
             </h1>
             <p className="text-gray-300 max-w-3xl">
               Scan all six unique codes around town to unlock a free photoshoot. Each valid scan fills one stamp slot below.
@@ -1140,10 +1140,10 @@ const StampRewardsPage = () => {
             )}
           </div>
 
-          <div className="glass-card border border-custom-yellow/25 rounded-3xl p-8 space-y-6">
+          <div className="glass-card border border-custom-gold/25 rounded-3xl p-8 space-y-6">
             <div className="flex flex-wrap items-center gap-4 justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-custom-yellow">Progress</p>
+                <p className="text-sm uppercase tracking-[0.25em] text-custom-gold">Progress</p>
                 <h3 className="text-2xl font-bold text-white">
                   You&apos;ve collected {collectedCount} of {REQUIRED_STAMP_COUNT} stamps
                 </h3>
@@ -1161,14 +1161,14 @@ const StampRewardsPage = () => {
                     key={code.id}
                     className={`rounded-xl p-4 border text-center transition ${
                       isFilled
-                        ? 'border-custom-yellow bg-custom-yellow/10 text-white'
+                        ? 'border-custom-gold bg-custom-gold/10 text-white'
                         : 'border-gray-800 bg-black/30 text-gray-400'
                     }`}
                   >
                     <div className="flex items-center justify-center mb-2">
                       <div
                         className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-extrabold ${
-                          isFilled ? 'bg-custom-yellow text-black' : 'bg-gray-800 text-white'
+                          isFilled ? 'bg-custom-gold text-black' : 'bg-gray-800 text-white'
                         }`}
                       >
                         {VALID_STAMP_CODES.indexOf(code) + 1}
@@ -1190,7 +1190,7 @@ const StampRewardsPage = () => {
                 </p>
                 <button
                   onClick={handleClaimReward}
-                  className="bg-custom-yellow text-black font-bold px-6 py-3 rounded-lg hover:bg-white transition duration-300"
+                  className="bg-custom-gold text-black font-bold px-6 py-3 rounded-lg hover:bg-white transition duration-300"
                 >
                   Claim / View Instructions
                 </button>
@@ -1207,13 +1207,13 @@ const StampRewardsPage = () => {
             )}
           </div>
 
-          <div className="glass-card border border-custom-yellow/25 rounded-3xl p-8 space-y-4">
+          <div className="glass-card border border-custom-gold/25 rounded-3xl p-8 space-y-4">
             <div className="flex items-center gap-3">
-              <svg className="w-8 h-8 text-custom-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 text-custom-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.4" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-custom-yellow">Guided route</p>
+                <p className="text-sm uppercase tracking-[0.25em] text-custom-gold">Guided route</p>
                 <h3 className="text-2xl font-bold text-white">Get back to Cafe Vintcent</h3>
                 <p className="text-gray-300 text-sm">
                   Same address and directions as the QR page. Use the map to navigate straight to the venue.
@@ -1222,7 +1222,7 @@ const StampRewardsPage = () => {
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <a
-                className="bg-custom-yellow text-black font-bold px-5 py-3 rounded-lg hover:bg-white transition duration-300"
+                className="bg-custom-gold text-black font-bold px-5 py-3 rounded-lg hover:bg-white transition duration-300"
                 href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Vintcent%2C+Mossel+Bay"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1283,7 +1283,7 @@ const OffCanvasMenu = ({ isOpen, onClose, logoSrc }) => {
           {/* Top Section: Logo and Close Button */}
           <div className="flex justify-between items-center mb-12">
             <a href="#">
-              <img src={logoSrc} alt="GoToGuys Logo" className="h-12 w-auto" />
+              <img src={logoSrc} alt="SHOCKWAVE Logo" className="h-12 w-auto" />
             </a>
             <button onClick={onClose} className="text-gray-400 hover:text-white" aria-label="Close menu">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -1305,33 +1305,33 @@ const OffCanvasMenu = ({ isOpen, onClose, logoSrc }) => {
               
               <div className="space-y-4">
                 {/* Dashboard */}
-                <button onClick={() => handleAdminNav('/admin')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-yellow transition-all group">
-                   <span className="font-bold text-white group-hover:text-custom-yellow">Dashboard Overview</span>
+                <button onClick={() => handleAdminNav('/admin')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-gold transition-all group">
+                   <span className="font-bold text-white group-hover:text-custom-gold">Dashboard Overview</span>
                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                 </button>
 
                 {/* Shop Manager */}
-                <button onClick={() => handleAdminNav('/admin/shop')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-yellow transition-all group">
+                <button onClick={() => handleAdminNav('/admin/shop')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-gold transition-all group">
                    <div className="text-left">
-                     <span className="block font-bold text-white group-hover:text-custom-yellow">Shop Products</span>
+                     <span className="block font-bold text-white group-hover:text-custom-gold">Shop Products</span>
                      <span className="text-xs text-gray-500">Edit prices, images & descriptions</span>
                    </div>
                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                 </button>
 
                 {/* Blog Manager */}
-                <button onClick={() => handleAdminNav('/admin/blog')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-yellow transition-all group">
+                <button onClick={() => handleAdminNav('/admin/blog')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-gold transition-all group">
                    <div className="text-left">
-                     <span className="block font-bold text-white group-hover:text-custom-yellow">Blog Posts</span>
+                     <span className="block font-bold text-white group-hover:text-custom-gold">Blog Posts</span>
                      <span className="text-xs text-gray-500">Write articles & updates</span>
                    </div>
                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                 </button>
 
                 {/* Portfolio Manager */}
-                <button onClick={() => handleAdminNav('/admin/portfolio')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-yellow transition-all group">
+                <button onClick={() => handleAdminNav('/admin/portfolio')} className="w-full flex items-center justify-between p-4 bg-gray-800 rounded-lg hover:bg-gray-700 hover:border-l-4 hover:border-custom-gold transition-all group">
                    <div className="text-left">
-                     <span className="block font-bold text-white group-hover:text-custom-yellow">Portfolio</span>
+                     <span className="block font-bold text-white group-hover:text-custom-gold">Portfolio</span>
                      <span className="text-xs text-gray-500">Upload new project galleries</span>
                    </div>
                    <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -1354,22 +1354,22 @@ const OffCanvasMenu = ({ isOpen, onClose, logoSrc }) => {
                 <h4 className="text-xl font-bold text-white mb-6">Contact Us</h4>
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-start">
-                    <span className="mt-1 mr-3 text-custom-yellow">
+                    <span className="mt-1 mr-3 text-custom-gold">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </span>
                     <span>Mosselbay</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mt-1 mr-3 text-custom-yellow">
+                    <span className="mt-1 mr-3 text-custom-gold">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                     </span>
                     <span>+27 62 107 2795</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mt-1 mr-3 text-custom-yellow">
+                    <span className="mt-1 mr-3 text-custom-gold">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </span>
-                    <span>info@gotoguys.online</span>
+                    <span>info@shockwave.online</span>
                   </li>
                 </ul>
               </div>
@@ -1380,8 +1380,8 @@ const OffCanvasMenu = ({ isOpen, onClose, logoSrc }) => {
                   Join the tribe. Stay ahead. Create better.
                 </p>
                 <form className="flex">
-                  <input type="email" placeholder="example@gmail.com" className="w-full px-4 py-3 rounded-l-md bg-gray-700 text-white border-0 focus:ring-2 focus:ring-custom-yellow outline-none" required />
-                  <button type="submit" className="bg-custom-yellow text-black font-bold px-4 py-3 rounded-r-md hover:bg-yellow-400 transition duration-300">
+                  <input type="email" placeholder="example@gmail.com" className="w-full px-4 py-3 rounded-l-md bg-gray-700 text-white border-0 focus:ring-2 focus:ring-custom-gold outline-none" required />
+                  <button type="submit" className="bg-custom-gold text-black font-bold px-4 py-3 rounded-r-md hover:bg-[#e5c76b] transition duration-300">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </button>
                 </form>
@@ -1393,13 +1393,13 @@ const OffCanvasMenu = ({ isOpen, onClose, logoSrc }) => {
           {/* Bottom Section: Social Links (Always visible or customizable) */}
           <div className="mt-auto pt-8 border-t border-gray-700">
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61574788783029" className="text-gray-400 hover:text-custom-yellow" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61574788783029" className="text-gray-400 hover:text-custom-gold" aria-label="Facebook">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-custom-yellow" aria-label="Twitter">
+              <a href="#" className="text-gray-400 hover:text-custom-gold" aria-label="Twitter">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.63 11.63 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-custom-yellow" aria-label="LinkedIn">
+              <a href="#" className="text-gray-400 hover:text-custom-gold" aria-label="LinkedIn">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd" /></svg>
               </a>
             </div>
@@ -1431,14 +1431,14 @@ const Header = ({ navigate, currentPage, cartCount }) => {
   };
 
   const getNavLinkClass = (page) => `nav-link ${currentPage === page ? 'active' : ''}`;
-  const getMobileNavLinkClass = (page) => `block text-white py-2 ${currentPage === page ? 'text-custom-yellow' : ''}`;
+  const getMobileNavLinkClass = (page) => `block text-white py-2 ${currentPage === page ? 'text-custom-gold' : ''}`;
 
   return (
     <header className="absolute top-0 left-0 w-full z-100">
       <nav className="container mx-auto px-4 md:px-6 py-6 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="mr-12" onClick={(e) => handleNavClick(e, 'home')}>
-            <img src={logo} alt="GoToGuys Logo" className="h-16 w-auto" />
+            <img src={logo} alt="SHOCKWAVE Logo" className="h-16 w-auto" />
           </a>
           {/* Desktop Nav - The "Buttons" on the header */}
           <div className="hidden md:flex items-center space-x-10">
@@ -1453,19 +1453,19 @@ const Header = ({ navigate, currentPage, cartCount }) => {
         </div>
         <div className="md:hidden flex items-center gap-4">
           <button
-            className="relative text-white hover:text-custom-yellow transition duration-300"
+            className="relative text-white hover:text-custom-gold transition duration-300"
             onClick={() => navigate('cart')}
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
             {cartCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-custom-yellow text-black text-xs font-extrabold rounded-full px-2 py-0.5">
+              <span className="absolute -top-2 -right-2 bg-custom-gold text-black text-xs font-extrabold rounded-full px-2 py-0.5">
                 {cartCount}
               </span>
             )}
           </button>
           <a
             href="#"
-            className="text-white hover:text-custom-yellow text-sm"
+            className="text-white hover:text-custom-gold text-sm"
             onClick={(e) => handleNavClick(e, 'account')}
           >
             {accountLabel}
@@ -1476,16 +1476,16 @@ const Header = ({ navigate, currentPage, cartCount }) => {
         </div>
         
         <div className="hidden md:flex items-center space-x-6">
-            <button className="relative text-white hover:text-custom-yellow transition duration-300" onClick={() => navigate('cart')}>
+            <button className="relative text-white hover:text-custom-gold transition duration-300" onClick={() => navigate('cart')}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                 {cartCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-custom-yellow text-black text-xs font-extrabold rounded-full px-2 py-0.5">
+                  <span className="absolute -top-2 -right-2 bg-custom-gold text-black text-xs font-extrabold rounded-full px-2 py-0.5">
                 {cartCount}
               </span>
             )}
         </button>
         <a href="#" className={getNavLinkClass('account')} onClick={(e) => handleNavClick(e, 'account')}>{accountLabel}</a>
-        <button className="text-white hover:text-custom-yellow transition duration-300" onClick={() => setIsOffCanvasMenuOpen(true)}>
+        <button className="text-white hover:text-custom-gold transition duration-300" onClick={() => setIsOffCanvasMenuOpen(true)}>
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </div>
@@ -1508,7 +1508,7 @@ const Header = ({ navigate, currentPage, cartCount }) => {
                 <p className="text-xs tracking-[0.18em] text-gray-400 uppercase">Account</p>
               <div className="space-y-1">
                 <a href="#" className={getMobileNavLinkClass('cart')} onClick={(e) => handleNavClick(e, 'cart')}>CART ({cartCount})</a>
-                {role === 'admin' && <Link to="/admin" className="block text-white py-2 hover:text-custom-yellow transition duration-300">ADMIN</Link>}
+                {role === 'admin' && <Link to="/admin" className="block text-white py-2 hover:text-custom-gold transition duration-300">ADMIN</Link>}
               </div>
             </div>
             </div>
@@ -1542,7 +1542,7 @@ const handleSubscribe = async (e) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 items-center text-center md:text-left">
           <div className="space-y-4 md:justify-self-start text-center md:text-center">
             <a href="#" className="flex justify-center text-3xl font-extrabold">
-              <img src={logo} alt="GoToGuys" className="h-24 w-auto" />
+              <img src={logo} alt="SHOCKWAVE" className="h-24 w-auto" />
             </a>
             <p className="text-gray-400 max-w-sm leading-relaxed mx-auto">
               We see every shift as a chance to adapt, improve, and guide progress. Agility isn&apos;t just a process - it&apos;s who we are.
@@ -1554,10 +1554,10 @@ const handleSubscribe = async (e) => {
             <ul className="space-y-3 text-gray-400">
               <li>Mosselbay</li>
               <li>
-                <a href="tel:+27621072795" className="hover:text-custom-yellow transition">+27 62 107 2795</a>
+                <a href="tel:+27621072795" className="hover:text-custom-gold transition">+27 62 107 2795</a>
               </li>
               <li>
-                <a href="mailto:info@gotoguys.online" className="hover:text-custom-yellow transition">info@gotoguys.online</a>
+                <a href="mailto:info@shockwave.online" className="hover:text-custom-gold transition">info@shockwave.online</a>
               </li>
             </ul>
           </div>
@@ -1570,22 +1570,22 @@ const handleSubscribe = async (e) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="example@gmail.com"
-                className="w-full px-4 py-3 rounded-l-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-custom-yellow focus:ring-1 focus:ring-custom-yellow placeholder-gray-500 transition-all"
+                className="w-full px-4 py-3 rounded-l-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-custom-gold focus:ring-1 focus:ring-custom-gold placeholder-gray-500 transition-all"
                 required
               />
               <button
                 type="submit"
-                className="bg-custom-yellow text-black font-bold px-6 py-3 rounded-r-md hover:bg-white hover:scale-105 transition duration-300"
+                className="bg-custom-gold text-black font-bold px-6 py-3 rounded-r-md hover:bg-white hover:scale-105 transition duration-300"
               >
                 Go
               </button>
             </form>
-            {status && <p className="text-custom-yellow mt-2 text-sm">{status}</p>}
+            {status && <p className="text-custom-gold mt-2 text-sm">{status}</p>}
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
-          <p>&copy; 2025 GoToGuys. All Rights Reserved.</p>
+          <p>&copy; 2025 SHOCKWAVE. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
@@ -1595,7 +1595,7 @@ const handleSubscribe = async (e) => {
 // --- Reusable Call to Action Component ---
 const StarIcon = () => (
   // Updated SVG for a better star appearance
-  <svg className="w-5 h-5 text-custom-yellow fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-5 h-5 text-custom-gold fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 18.896l-7.416 3.987 1.48-8.279L.332 9.306l8.332-1.151L12 .587z"/>
   </svg>
 );
@@ -1623,9 +1623,9 @@ const CallToAction = () => (
         <h2 className="text-4xl md:text-5xl font-extrabold text-white">
             "Legacy brands aren't born. They're built.
             <br />
-            <span className="text-custom-yellow">Let's build yours"</span>
+            <span className="text-custom-gold">Let's build yours"</span>
         </h2>
-        <a href="mailto:gotoguys.office@gmail.com?subject=Set up a meeting" className="mt-8 inline-block bg-custom-yellow text-black font-bold py-3 px-8 rounded-md text-lg hover:bg-yellow-400 transition duration-300">
+        <a href="mailto:shockwave.office@gmail.com?subject=Set up a meeting" className="mt-8 inline-block bg-custom-gold text-black font-bold py-3 px-8 rounded-md text-lg hover:bg-[#e5c76b] transition duration-300">
             Scale My Business
         </a>
     </div>
@@ -1716,8 +1716,8 @@ const ProductModal = ({ product, onClose, navigate, addToCart }) => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
       <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={onClose}></div>
-      <div className="relative bg-custom-card border border-custom-yellow rounded-xl max-w-lg w-full p-8 shadow-2xl animate-fade-in overflow-hidden">
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-custom-yellow blur-[80px] opacity-20"></div>
+      <div className="relative bg-custom-card border border-custom-gold rounded-xl max-w-lg w-full p-8 shadow-2xl animate-fade-in overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-custom-gold blur-[80px] opacity-20"></div>
         
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-white">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -1728,7 +1728,7 @@ const ProductModal = ({ product, onClose, navigate, addToCart }) => {
                 <img src={product.image || logo} alt={product.name} className="w-12 h-12 object-contain" />
             </div>
             <h3 className="text-2xl font-bold text-white uppercase tracking-wider">{product.name}</h3>
-            <p className="text-custom-yellow text-xl font-bold mt-2">{product.price}</p>
+            <p className="text-custom-gold text-xl font-bold mt-2">{product.price}</p>
             <p className="text-gray-400 text-sm mt-1">Or pay {toPriceNumber(product.price)} GG</p>
             <p className="text-gray-400 mt-4 text-sm leading-relaxed">{product.description || (product.features && product.features.join(', '))}</p>
             
@@ -1741,7 +1741,7 @@ const ProductModal = ({ product, onClose, navigate, addToCart }) => {
                 </button>
                 <button 
                   onClick={handleBuyNow}
-                  className="w-full bg-custom-yellow text-black font-extrabold uppercase tracking-widest py-3 rounded-lg hover:bg-white hover:scale-105 transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)]"
+                  className="w-full bg-custom-gold text-black font-extrabold uppercase tracking-widest py-3 rounded-lg hover:bg-white hover:scale-105 transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)]"
                 >
                   Buy Now
                 </button>
@@ -1770,17 +1770,17 @@ const Cart = ({ cart, removeFromCart, navigate, loyaltyBalance = 0, onRedeemWith
   return (
     <div className="min-h-screen bg-custom-dark pt-36 pb-24 px-4 md:px-6 relative overflow-hidden">
         {/* Background Atmosphere */}
-        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-custom-yellow blur-[150px] opacity-5 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-custom-gold blur-[150px] opacity-5 pointer-events-none"></div>
 
         <div className="container mx-auto max-w-6xl relative z-10 cart-container">
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-12">
-                Your <span className="text-custom-yellow">Cart</span>
+                Your <span className="text-custom-gold">Cart</span>
             </h1>
             
             {cart.length === 0 ? (
                 <div className="glass-card rounded-xl p-16 text-center max-w-3xl mx-auto border border-gray-800">
                     <p className="text-2xl text-white font-bold mb-4">Your cart is currently empty.</p>
-                    <button onClick={() => navigate('shop')} className="bg-custom-yellow text-black font-bold uppercase tracking-widest py-3 px-8 rounded hover:bg-white transition duration-300">
+                    <button onClick={() => navigate('shop')} className="bg-custom-gold text-black font-bold uppercase tracking-widest py-3 px-8 rounded hover:bg-white transition duration-300">
                         Return to Shop
                     </button>
                 </div>
@@ -1796,7 +1796,7 @@ const Cart = ({ cart, removeFromCart, navigate, loyaltyBalance = 0, onRedeemWith
                                 <div className="flex-grow text-center sm:text-left">
                                     <h3 className="font-bold text-xl text-white">{item.name}</h3>
                                     <p className="text-gray-400 text-sm uppercase tracking-wide mt-1">{item.category}</p>
-                                    <p className="text-custom-yellow font-extrabold text-lg mt-2">{item.price} <span className="text-gray-500 text-sm font-normal">x {item.qty}</span></p>
+                                    <p className="text-custom-gold font-extrabold text-lg mt-2">{item.price} <span className="text-gray-500 text-sm font-normal">x {item.qty}</span></p>
                                 </div>
                                 <button onClick={() => removeFromCart(item.id)} className="p-3 text-gray-400 hover:text-red-500 transition duration-300">
                                     Remove
@@ -1807,9 +1807,9 @@ const Cart = ({ cart, removeFromCart, navigate, loyaltyBalance = 0, onRedeemWith
 
                     {/* Summary Sidebar */}
                     <div className="lg:col-span-1">
-                        <div className="glass-card p-8 rounded-xl border border-custom-yellow/20 sticky top-32">
+                        <div className="glass-card p-8 rounded-xl border border-custom-gold/20 sticky top-32">
                             <h3 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-4">Order Summary</h3>
-                            <div className="flex justify-between mb-8 text-2xl font-extrabold text-custom-yellow">
+                            <div className="flex justify-between mb-8 text-2xl font-extrabold text-custom-gold">
                                 <span>Total</span>
                                 <span>R {total}</span>
                             </div>
@@ -1834,14 +1834,14 @@ const Cart = ({ cart, removeFromCart, navigate, loyaltyBalance = 0, onRedeemWith
                             <button 
                                 onClick={() => onRedeemWithPoints && onRedeemWithPoints(cart, total)}
                                 disabled={!canPayWithPoints}
-                                className="w-full mb-3 bg-gray-800 text-white font-bold uppercase tracking-widest py-3 rounded-lg border border-gray-700 hover:border-custom-yellow hover:text-custom-yellow transition duration-300 disabled:opacity-50"
+                                className="w-full mb-3 bg-gray-800 text-white font-bold uppercase tracking-widest py-3 rounded-lg border border-gray-700 hover:border-custom-gold hover:text-custom-gold transition duration-300 disabled:opacity-50"
                             >
                                 Pay with GG Points ({total} GG)
                             </button>
 
                             <button 
                                 onClick={() => navigate('checkout')} 
-                                className="w-full bg-custom-yellow text-black font-bold uppercase tracking-widest py-4 rounded-lg hover:bg-white transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)] flex justify-center items-center gap-2"
+                                className="w-full bg-custom-gold text-black font-bold uppercase tracking-widest py-4 rounded-lg hover:bg-white transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)] flex justify-center items-center gap-2"
                             >
                                 <span>Proceed to Checkout</span>
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
@@ -1878,9 +1878,9 @@ const ShopModal = ({ product, onClose, navigate, addToCart }) => {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
       <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={onClose}></div>
-      <div className="relative bg-custom-card border border-custom-yellow rounded-xl max-w-lg w-full p-8 shadow-2xl animate-fade-in overflow-hidden">
+      <div className="relative bg-custom-card border border-custom-gold rounded-xl max-w-lg w-full p-8 shadow-2xl animate-fade-in overflow-hidden">
         {/* Decorative Glow */}
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-custom-yellow blur-[80px] opacity-20"></div>
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-custom-gold blur-[80px] opacity-20"></div>
         
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-white">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -1892,7 +1892,7 @@ const ShopModal = ({ product, onClose, navigate, addToCart }) => {
                 <img src={product.image} alt={product.name} className="w-10 h-10 object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-white uppercase tracking-wider">{product.name}</h3>
-              <p className="text-custom-yellow text-xl font-bold mt-2">{product.price}</p>
+              <p className="text-custom-gold text-xl font-bold mt-2">{product.price}</p>
               <p className="text-gray-400 mt-4 text-sm leading-relaxed">{product.description}</p>
               
               <div className="w-full mt-8 space-y-3">
@@ -1906,7 +1906,7 @@ const ShopModal = ({ product, onClose, navigate, addToCart }) => {
                 <button 
                       type="button"
                       onClick={handleBuyNow}
-                      className="w-full bg-custom-yellow text-black font-extrabold uppercase tracking-widest py-3 rounded-lg hover:bg-white transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)]"
+                      className="w-full bg-custom-gold text-black font-extrabold uppercase tracking-widest py-3 rounded-lg hover:bg-white transition duration-300 shadow-[0_0_20px_rgba(253,190,51,0.3)]"
                     >
                       Buy Now
                     </button>
@@ -1984,11 +1984,11 @@ const Shop = ({ navigate, addToCart }) => {
 
       <div className="container mx-auto px-4 md:px-6 py-32 relative z-10 flex-grow flex flex-col">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tighter">The <span className="text-custom-yellow">Shop</span></h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tighter">The <span className="text-custom-gold">Shop</span></h1>
           {role === 'admin' && (
             <Link
               to="/admin"
-              className="text-xs px-3 py-2 rounded border border-custom-yellow text-custom-yellow hover:bg-custom-yellow hover:text-black"
+              className="text-xs px-3 py-2 rounded border border-custom-gold text-custom-gold hover:bg-custom-gold hover:text-black"
             >
               Edit in Admin
             </Link>
@@ -1999,7 +1999,7 @@ const Shop = ({ navigate, addToCart }) => {
           {items.map((product) => (
             <div
               key={product.id || product.name}
-              className="glass-card rounded-xl p-4 flex flex-col items-center group cursor-pointer relative overflow-hidden transition-all duration-300 hover:border-custom-yellow border border-transparent"
+              className="glass-card rounded-xl p-4 flex flex-col items-center group cursor-pointer relative overflow-hidden transition-all duration-300 hover:border-custom-gold border border-transparent"
               onClick={() => setSelectedProduct(product)}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/90 opacity-0 group-hover:opacity-100 transition duration-500 z-10"></div>
@@ -2018,14 +2018,14 @@ const Shop = ({ navigate, addToCart }) => {
                 <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1 block">
                   {product.category || 'Product'}
                 </span>
-                <h3 className="text-xl font-bold text-white group-hover:text-custom-yellow transition">
+                <h3 className="text-xl font-bold text-white group-hover:text-custom-gold transition">
                   {product.name}
                 </h3>
                 <p className="text-2xl font-extrabold text-white mt-1">
                   {product.price?.toString().startsWith('R') ? product.price : `R ${product.price || ''}`}
                 </p>
                 <p className="text-xs text-gray-400 mt-1">Or pay {toPriceNumber(product.price)} GG</p>
-                <button className="mt-4 opacity-0 group-hover:opacity-100 transition duration-500 delay-100 bg-transparent border border-custom-yellow text-custom-yellow px-6 py-2 rounded text-xs font-bold uppercase hover:bg-custom-yellow hover:text-black w-full md:w-auto">
+                <button className="mt-4 opacity-0 group-hover:opacity-100 transition duration-500 delay-100 bg-transparent border border-custom-gold text-custom-gold px-6 py-2 rounded text-xs font-bold uppercase hover:bg-custom-gold hover:text-black w-full md:w-auto">
                   View Product
                 </button>
               </div>
@@ -2096,7 +2096,7 @@ const Home = ({navigate}) => {
       id: 1,
       name: 'Lynn Du Plooy',
       title: 'Furry Friend Owner',
-      quote: "What a wonderful experience having a photoshoot with GoToGuys. We can recommend these are the Guys To Go To.They made the experience so much fun. Our furry family member was treated as part of the family and welcomed and included into the photoshoot. Beautiful shots with the three of us where taken and we can't wait to see the outcome. Will definitely share photos when received. Super excited .",
+      quote: "What a wonderful experience having a photoshoot with SHOCKWAVE. We can recommend these are the Guys To Go To.They made the experience so much fun. Our furry family member was treated as part of the family and welcomed and included into the photoshoot. Beautiful shots with the three of us where taken and we can't wait to see the outcome. Will definitely share photos when received. Super excited .",
       stars: 5,
       image: profileSarah // Use your imported image
     },
@@ -2104,7 +2104,7 @@ const Home = ({navigate}) => {
       id: 2,
       name: 'Helena du Bruyn',
       title: 'Facility Manager | Bardolino Care Centre',
-      quote: "GoToGuys has been an incredible partner in growing our online presence. Their team is knowledgeable, results-driven, and always willing to go the extra mile to ensure our campaigns succeed. They take the time to understand our business goals and tailor strategies that deliver measurable results. Communication is always clear, deadlines are met, and the creativity they bring to the table sets them apart. Since working with GoToGuys, weÃ¢â‚¬â„¢ve seen a significant improvement in engagement, signups, and overall brand visibility. Highly recommended for anyone looking for a reliable and innovative digital marketing partner.",
+      quote: "SHOCKWAVE has been an incredible partner in growing our online presence. Their team is knowledgeable, results-driven, and always willing to go the extra mile to ensure our campaigns succeed. They take the time to understand our business goals and tailor strategies that deliver measurable results. Communication is always clear, deadlines are met, and the creativity they bring to the table sets them apart. Since working with SHOCKWAVE, weÃ¢â‚¬â„¢ve seen a significant improvement in engagement, signups, and overall brand visibility. Highly recommended for anyone looking for a reliable and innovative digital marketing partner.",
       stars: 5,
       image: profileJohn // Use your imported image
     },
@@ -2112,7 +2112,7 @@ const Home = ({navigate}) => {
       id: 3,
       name: 'Eleanor-Rose Fourie',
       title: 'Professional photographer',
-      quote: "GoToGuys Photography is absolutely incredible! From the very first interaction, their friendliness stood out Ã¢â‚¬â€ honestly a 5/5 experience in every way. They made the whole photoshoot fun, relaxed, and professional at the same time. The quality of the photos blew me away Ã¢â‚¬â€ crisp, creative, and perfectly capturing what I needed for my brand. On top of that, IÃ¢â‚¬â„¢m beyond excited about the SEO strategy theyÃ¢â‚¬â„¢re rolling out for me. If their photography results are anything to go by, I have no doubt their SEO will skyrocket my online presence too! Highly recommend GoToGuys Ã¢â‚¬â€ if you want a team thatÃ¢â‚¬â„¢s passionate, professional, and genuinely cares about your success, theyÃ¢â‚¬â„¢re the ones to call.",
+      quote: "SHOCKWAVE Photography is absolutely incredible! From the very first interaction, their friendliness stood out Ã¢â‚¬â€ honestly a 5/5 experience in every way. They made the whole photoshoot fun, relaxed, and professional at the same time. The quality of the photos blew me away Ã¢â‚¬â€ crisp, creative, and perfectly capturing what I needed for my brand. On top of that, IÃ¢â‚¬â„¢m beyond excited about the SEO strategy theyÃ¢â‚¬â„¢re rolling out for me. If their photography results are anything to go by, I have no doubt their SEO will skyrocket my online presence too! Highly recommend SHOCKWAVE Ã¢â‚¬â€ if you want a team thatÃ¢â‚¬â„¢s passionate, professional, and genuinely cares about your success, theyÃ¢â‚¬â„¢re the ones to call.",
       stars: 5,
       image: profileJane // Use your imported image
     }
@@ -2152,13 +2152,13 @@ const Home = ({navigate}) => {
 return (
     <>
       <div className="hero-bg bg-custom-dark relative overflow-hidden min-h-screen flex items-center">
-    {/* 1. Yellow Lines (Background) 
+    {/* 1. Light trails (Background) 
        - Changed z-index to 10 so it sits BEHIND text
        - Added opacity-80 to make text more readable
     */}
     <img 
-      src={yellowLines} 
-      alt="Yellow lines" 
+      src={goldLines} 
+      alt="Light trails" 
       className="absolute top-0 left-0 w-full h-full object-cover z-20 opacity-80 pointer-events-none" 
     />
     
@@ -2182,15 +2182,15 @@ return (
         <div className="w-full max-w-4xl relative">
             {/* HEADLINES */}
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
-                Built to <span className="text-custom-yellow">Perform</span>
+                Built to <span className="text-custom-gold">Perform</span>
             </h1>
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mt-2">
-                Designed to <span className="text-custom-yellow">Win</span>
+                Designed to <span className="text-custom-gold">Win</span>
             </h1>
             <div className="mt-6 max-w-2xl">
                 <p className="text-lg md:text-xl text-gray-200" style={{ textShadow: '1px 1px 1px #000' }}>
                     We help mid-to-large businesses in the Garden Route get more
-                    <span className="text-custom-yellow font-semibold"> leads and bookings</span> with done-for-you digital marketing.
+                    <span className="text-custom-gold font-semibold"> leads and bookings</span> with done-for-you digital marketing.
                 </p>
                 <p className="text-sm md:text-base text-gray-200 mt-3" style={{ textShadow: '1px 1px 1px #000' }}>
                     Websites, social media management, paid ads, content creation, and lead capture—handled end-to-end.
@@ -2209,7 +2209,7 @@ return (
                   href="https://share.google/hUsP59FtvZHcA7Z95"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-4 rounded-full border border-white/20 bg-black/50 px-5 py-2.5 text-sm text-white/90 backdrop-blur-sm hover:border-custom-yellow hover:text-custom-yellow transition"
+                  className="inline-flex items-center gap-4 rounded-full border border-white/20 bg-black/50 px-5 py-2.5 text-sm text-white/90 backdrop-blur-sm hover:border-custom-gold hover:text-custom-gold transition"
                 >
                   <span className="flex items-center gap-2">
                     <span className="flex items-center gap-1">
@@ -2248,9 +2248,9 @@ return (
         style={{ textShadow: '1px 1px 1px #000' }}>
         <span className="font-semibold">Follow Us</span>
         <span className="text-gray-400 mx-2">-</span>
-        <a href="https://www.facebook.com/p/Gotoguys-61574788783029/" className="font-semibold hover:text-custom-yellow">Facebook</a>
+        <a href="https://www.facebook.com/p/SHOCKWAVE-61574788783029/" className="font-semibold hover:text-custom-gold">Facebook</a>
         <span className="text-gray-400 mx-2">/</span>
-        <a href="https://www.instagram.com/gotoguy_s/" className="font-semibold hover:text-custom-yellow">Instagram</a>
+        <a href="https://www.instagram.com/shockwave_s/" className="font-semibold hover:text-custom-gold">Instagram</a>
     </div>
 </div>
 
@@ -2271,7 +2271,7 @@ return (
                  Clients see a{' '}
                  <span 
                     className={`scroll-underline ${funFactVisible ? 'in-view' : ''} z-10 relative px-1`}
-                    style={{ color: '#FFCC00' }}
+                    style={{ color: '#D4AF37' }}
                  >
                      327% increase
                  </span>
@@ -2284,18 +2284,18 @@ return (
           <div className="container mx-auto px-4 md:px-6">
               <div className="text-center">
                   <div className="flex justify-center mb-4">
-                      <span className="inline-flex items-center rounded-full border border-custom-yellow/40 bg-custom-yellow/10 px-10 py-3 text-sm md:text-2xl font-bold uppercase tracking-[0.2em] text-custom-yellow">
+                      <span className="inline-flex items-center rounded-full border border-custom-gold/40 bg-custom-gold/10 px-10 py-3 text-sm md:text-2xl font-bold uppercase tracking-[0.2em] text-custom-gold">
                           Proven momentum, trusted by 100+ clients
                       </span>
                   </div>
-                  <div className="glass-card border border-custom-yellow/20 rounded-2xl p-6 md:p-8">
+                  <div className="glass-card border border-custom-gold/20 rounded-2xl p-6 md:p-8">
                       <div className={`client-graph-stage ${graphVisible ? 'is-visible' : ''}`}>
                       <div className="graph-layer w-full relative z-10">
                           <svg viewBox="0 0 360 180" className="w-full h-44">
                               <defs>
                                   <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
                                       <stop offset="0%" stopColor="#3a3a3a" />
-                                      <stop offset="100%" stopColor="#FDBE33" />
+                                      <stop offset="100%" stopColor="#D4AF37" />
                                   </linearGradient>
                               </defs>
                               <g stroke="#3a3a3a" strokeWidth="1">
@@ -2339,7 +2339,7 @@ return (
       <section className="py-16 md:py-24 relative z-10">
           <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white mb-12">
-                  Services we can <br /> <span className="text-custom-yellow">help you with</span>
+                  Services we can <br /> <span className="text-custom-gold">help you with</span>
               </h2>
               
               {/* UPDATED: Using the 3-column Cube Grid (aspect-square) */}
@@ -2348,7 +2348,7 @@ return (
                       <div 
                           key={service.id}
                           onClick={() => navigate('services', service.slug)} // Navigates to Services page
-                          className="group cursor-pointer relative overflow-hidden rounded-2xl aspect-square border border-gray-800 hover:border-custom-yellow transition-all duration-500 hover:shadow-[0_0_20px_rgba(253,190,51,0.2)] hover:scale-[1.02]"
+                          className="group cursor-pointer relative overflow-hidden rounded-2xl aspect-square border border-gray-800 hover:border-custom-gold transition-all duration-500 hover:shadow-[0_0_20px_rgba(253,190,51,0.2)] hover:scale-[1.02]"
                       >
                           {/* 1. Background Image */}
                           <div className="absolute inset-0 bg-gray-900">
@@ -2363,10 +2363,10 @@ return (
 
                           {/* 3. Bottom Text Content */}
                           <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 z-20">
-                              <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-custom-yellow transition leading-tight">{service.title}</h3>
+                              <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-custom-gold transition leading-tight">{service.title}</h3>
                               
                               {/* Animated Line */}
-                              <div className="h-1 bg-custom-yellow mt-3 w-0 group-hover:w-12 transition-all duration-500"></div>
+                              <div className="h-1 bg-custom-gold mt-3 w-0 group-hover:w-12 transition-all duration-500"></div>
                               
                               <p className="text-[10px] font-bold uppercase tracking-widest mt-2 text-gray-400 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
                                   View Pricing
@@ -2381,7 +2381,7 @@ return (
      <section className="py-16 md:py-24 bg-custom-gray">
           <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white">
-                  GoToGuys <span className="text-custom-yellow">Portfolio</span>
+                  SHOCKWAVE <span className="text-custom-gold">Portfolio</span>
               </h2>
               <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto mt-4">
                   Photography and videography sit at the heart of our work. Get a moving preview of each before you dive into the full gallery.
@@ -2407,7 +2407,7 @@ return (
                       </div>
                       <div className="portfolio-panel-overlay"></div>
                       <div className="portfolio-panel-content">
-                          <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">GoToGuys: Photography</p>
+                          <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">SHOCKWAVE: Photography</p>
                           <h3 className="text-3xl font-extrabold text-white">Story-led, cinematic stills</h3>
                           <p className="text-gray-300 max-w-md">
                             Sliding edits, layered fades, and editorial lighting that keeps every frame feeling alive.
@@ -2424,7 +2424,7 @@ return (
                       </div>
                       <div className="portfolio-panel-overlay"></div>
                       <div className="portfolio-panel-content">
-                          <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">GoToGuys: Videography</p>
+                          <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">SHOCKWAVE: Videography</p>
                           <h3 className="text-3xl font-extrabold text-white">Landscape-driven motion</h3>
                           <p className="text-gray-300 max-w-md">
                             Wide compositions, moving texture, and a cinematic pace that builds atmosphere.
@@ -2449,12 +2449,12 @@ return (
                           <img src={post.image} alt={post.title} loading="lazy" className="w-full h-48 object-cover" />
                         )}
                         <div className="p-6 space-y-2">
-                            <p className="text-xs uppercase tracking-[0.25em] text-custom-yellow">{post.category || 'Blog'}</p>
+                            <p className="text-xs uppercase tracking-[0.25em] text-custom-gold">{post.category || 'Blog'}</p>
                             <h3 className="text-xl font-bold text-white">{post.title}</h3>
                             <div className="text-gray-300 text-sm rich-text-content line-clamp-3" dangerouslySetInnerHTML={{ __html: post.excerpt || '' }} />
                             <button
                               onClick={() => navigate('blog')}
-                              className="text-custom-yellow font-semibold mt-2 inline-flex items-center gap-2 link-underline"
+                              className="text-custom-gold font-semibold mt-2 inline-flex items-center gap-2 link-underline"
                             >
                               Read More <span>&rarr;</span>
                             </button>
@@ -2467,7 +2467,7 @@ return (
                         <div key={idx} className="bg-custom-card rounded-lg overflow-hidden glass-card border border-gray-800">
                             <img src={img} alt="Blog placeholder" loading="lazy" className="w-full h-48 object-cover" />
                             <div className="p-6 space-y-2">
-                                <p className="text-xs uppercase tracking-[0.25em] text-custom-yellow">Blog</p>
+                                <p className="text-xs uppercase tracking-[0.25em] text-custom-gold">Blog</p>
                                 <h3 className="text-xl font-bold text-white">New story coming soon</h3>
                                 <p className="text-gray-400 text-sm">Fresh updates will appear here once published.</p>
                             </div>
@@ -2477,7 +2477,7 @@ return (
                   )}
               </div>
               <div className="text-center mt-12">
-                  <button onClick={() => navigate('blog')} className="bg-custom-yellow text-black font-bold py-3 px-8 rounded-md text-lg hover:bg-yellow-400 transition duration-300">
+                  <button onClick={() => navigate('blog')} className="bg-custom-gold text-black font-bold py-3 px-8 rounded-md text-lg hover:bg-[#e5c76b] transition duration-300">
                       View Blog
                   </button>
               </div>
@@ -2486,7 +2486,7 @@ return (
 
       {/* --- NEW CUBE SECTION WITH ANIMATION --- */}
        <section className="py-12 md:py-16 bg-custom-gray relative z-30">
-        <div><h3 className="text-3xl text-custom-yellow text-center mt-2 z-20"style={{ 
+        <div><h3 className="text-3xl text-custom-gold text-center mt-2 z-20"style={{ 
     textShadow: '2px 2px 2px #101010ff, -2px -2px 2px #101010ff, 2px -2px 2px #101010ff, -2px 2px 2px #101010ff'
   }}>Strong brands aren't lucky<br />they follow a blueprint.</h3></div>
          <div className="container mx-auto px-4 md:px-6 flex justify-end">
@@ -2501,18 +2501,18 @@ return (
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-custom-yellow mb-3">Google rating</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-custom-gold mb-3">Google rating</p>
               <h3 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
                 A 4.9-star reputation built on real results.
               </h3>
               <p className="text-gray-300 mt-4 max-w-xl">
-                Clients trust GoToGuys Digital Marketing to deliver performance that shows up in their reviews.
+                Clients trust SHOCKWAVE Digital Marketing to deliver performance that shows up in their reviews.
               </p>
               <a
                 href="https://share.google/hUsP59FtvZHcA7Z95"
                 target="_blank"
                 rel="noreferrer"
-                className="group inline-flex items-center gap-3 mt-6 text-custom-yellow font-semibold hover:text-white transition"
+                className="group inline-flex items-center gap-3 mt-6 text-custom-gold font-semibold hover:text-white transition"
               >
                 <span className="link-underline">View our Google badge</span>
                 <span className="text-lg">&rarr;</span>
@@ -2520,7 +2520,7 @@ return (
             </div>
 
             <div className="flex justify-center md:justify-end">
-              <div className="glass-card border border-custom-yellow/30 rounded-2xl px-6 py-5 w-full max-w-sm">
+              <div className="glass-card border border-custom-gold/30 rounded-2xl px-6 py-5 w-full max-w-sm">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="h-10 w-10 rounded-full bg-black/40 border border-white/10 flex items-center justify-center">
@@ -2533,10 +2533,10 @@ return (
                     </div>
                     <div>
                       <p className="text-white font-semibold leading-none">Google Badge</p>
-                      <p className="text-xs text-gray-400">GoToGuys Digital Marketing</p>
+                      <p className="text-xs text-gray-400">SHOCKWAVE Digital Marketing</p>
                     </div>
                   </div>
-                  <span className="text-custom-yellow text-xs font-bold uppercase tracking-[0.3em]">Trusted</span>
+                  <span className="text-custom-gold text-xs font-bold uppercase tracking-[0.3em]">Trusted</span>
                 </div>
 
                 <div className="mt-5 flex items-center gap-4">
@@ -2566,7 +2566,7 @@ return (
                <div className="relative w-80 h-64 flex items-center justify-center">
                   
                   {/* Glow Effect */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-custom-yellow blur-[100px] opacity-10 pointer-events-none"></div>
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-custom-gold blur-[100px] opacity-10 pointer-events-none"></div>
 
                   {/* 1. LEFT DIAMOND (Previous Reviewer) */}
                   <div 
@@ -2598,7 +2598,7 @@ return (
                   {/* Added 'key' to trigger animation on change */}
                   <div 
                     key={`curr-${currentReview.id}`}
-                    className="relative w-36 h-36 border-4 border-custom-yellow bg-gray-800 overflow-hidden z-0 shadow-[0_0_30px_rgba(253,190,51,0.3)] animate-fade-in"
+                    className="relative w-36 h-36 border-4 border-custom-gold bg-gray-800 overflow-hidden z-0 shadow-[0_0_30px_rgba(253,190,51,0.3)] animate-fade-in"
                   >
                      <img 
                         src={currentReview.image} 
@@ -2613,7 +2613,7 @@ return (
             {/* RIGHT: The Testimonial Text (Same as before) */}
             <div className="w-full md:w-2/3 text-left">
               {/* Large Quote Icon */}
-              <div className="text-custom-yellow mb-6">
+              <div className="text-custom-gold mb-6">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z" />
                 </svg>
@@ -2622,7 +2622,7 @@ return (
               {/* Dynamic Content with Fade Animation */}
               <div key={currentReview.id} className="animate-fade-in">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                  "Truly the Go-To Team for <span className="text-custom-yellow">Anything Creative!</span>"
+                  "Truly the SHOCKWAVE Team for <span className="text-custom-gold">Anything Creative!</span>"
                 </h3>
                 <p className="text-lg text-gray-300 leading-relaxed mb-8">
                   {currentReview.quote}
@@ -2642,13 +2642,13 @@ return (
               <div className="flex justify-end gap-4 mt-8">
                 <button 
                   onClick={handlePrevReview}
-                  className="p-3 border border-gray-600 rounded text-gray-400 hover:border-custom-yellow hover:text-custom-yellow transition duration-300"
+                  className="p-3 border border-gray-600 rounded text-gray-400 hover:border-custom-gold hover:text-custom-gold transition duration-300"
                 >
                   <ArrowLeftIcon />
                 </button>
                 <button 
                   onClick={handleNextReview}
-                  className="p-3 border border-gray-600 rounded text-gray-400 hover:border-custom-yellow hover:text-custom-yellow transition duration-300"
+                  className="p-3 border border-gray-600 rounded text-gray-400 hover:border-custom-gold hover:text-custom-gold transition duration-300"
                 >
                   <ArrowRightIcon />
                 </button>
@@ -2667,35 +2667,35 @@ return (
                       <div className="marquee-content">
                           <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
                          <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
                           <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
   <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
   <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
   <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
   <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
   <h3 className="text-5xl font-extrabold text-black"
                           style={{ 
-    textShadow: '2px 2px 2px #FFCC00ff, -2px -2px 2px #FFCC00ff, 2px -2px 2px #FFCC00ff, -2px 2px 2px #FFCC00ff'
+    textShadow: '2px 2px 2px #D4AF37ff, -2px -2px 2px #D4AF37ff, 2px -2px 2px #D4AF37ff, -2px 2px 2px #D4AF37ff'
   }}>Trusted all over the Garden Route</h3>
                       </div>
                   </div>
@@ -2745,7 +2745,7 @@ const teamData = [
     name: "Francois Coetzee",
     title: "CEO & Founder",
     image: iconFrancois, // Uses the image you imported
-    bio: "As the founder of GoToGuys, Francois's vision drives our relentless pursuit of innovation. He's passionate about building brands that last and creating strategies that deliver real-world results.",
+    bio: "As the founder of SHOCKWAVE, Francois's vision drives our relentless pursuit of innovation. He's passionate about building brands that last and creating strategies that deliver real-world results.",
     strengths: [
       "Strategic Vision & Brand Architecture",
       "Leadership & Team Building",
@@ -2763,7 +2763,7 @@ const teamData = [
     name: "Rualdo Kruger",
     title: "COO",
     image: iconRualdo, // Uses the image you imported
-    bio: "Rualdo is the operational engine that keeps GoToGuys running. With a keen eye for detail and process, he ensures every project is executed flawlessly, on time, and on budget.",
+    bio: "Rualdo is the operational engine that keeps SHOCKWAVE running. With a keen eye for detail and process, he ensures every project is executed flawlessly, on time, and on budget.",
     strengths: [
       "Operations & Process Management",
       "Financial Oversight",
@@ -2834,7 +2834,7 @@ const TeamMemberModal = ({ member, onClose }) => {
           {/* Right Column (Info) */}
           <div className="md:col-span-2">
             <h2 className="text-4xl font-extrabold text-white">{member.name}</h2>
-            <p className="text-xl font-bold text-custom-yellow mt-1">{member.title}</p>
+            <p className="text-xl font-bold text-custom-gold mt-1">{member.title}</p>
 
             <p className="text-gray-300 mt-6">{member.bio}</p>
 
@@ -2882,7 +2882,7 @@ const About = () => {
         
         {/* Content */}
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white">About <span className="text-custom-yellow">Us</span></h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white">About <span className="text-custom-gold">Us</span></h1>
             <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
               We don't just follow trends; we set them. Meet the team combining creative vision with technical precision to build your legacy.
             </p>
@@ -2894,7 +2894,7 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                   {/* Left: Text Content */}
                   <div className="flex flex-col justify-center h-full">
-                      <h3 className="text-sm font-bold tracking-widest text-custom-yellow uppercase mb-2">About Our Agency</h3>
+                      <h3 className="text-sm font-bold tracking-widest text-custom-gold uppercase mb-2">About Our Agency</h3>
                       <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
                           Your trusted partner <br/> for business
                       </h2>
@@ -2928,9 +2928,9 @@ const About = () => {
       <section className="bg-custom-gray py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
               <div className="bg-custom-card rounded-lg p-8 md:p-12 text-center max-w-4xl mx-auto">
-                  <h3 className="text-4xl font-semibold text-custom-yellow">Our Fun Fact</h3>
+                  <h3 className="text-4xl font-semibold text-custom-gold">Our Fun Fact</h3>
                   <p className="mt-4 text-2xl md:text-4xl font-bold text-white">
-                      Our clients typically see a <span className="text-custom-yellow">327% increase</span> in engagement within 90 days. No fluff, just smart marketing.
+                      Our clients typically see a <span className="text-custom-gold">327% increase</span> in engagement within 90 days. No fluff, just smart marketing.
                   </p>
               </div>
           </div>
@@ -2940,9 +2940,9 @@ const About = () => {
           <div className="container mx-auto px-4 md:px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                   
-                  {/* Left: Image with Yellow Accent Bar (Matches PDF Page 2) */}
+                  {/* Left: Image with gold Accent Bar (Matches PDF Page 2) */}
                   <div className="relative">
-                      <div className="absolute -left-4 top-4 bottom-4 w-2 bg-custom-yellow rounded-l-md z-10"></div> {/* The Yellow Bar */}
+                      <div className="absolute -left-4 top-4 bottom-4 w-2 bg-custom-gold rounded-l-md z-10"></div> {/* The gold Bar */}
                       <div className="rounded-xl overflow-hidden border border-gray-800 bg-custom-card relative h-[500px]">
                           <img src={digitalExcel} alt="Digital Excellence" className="w-full h-full object-cover opacity-90" />
                           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
@@ -2951,17 +2951,17 @@ const About = () => {
 
                   {/* Right: Text Content */}
                   <div className="pl-4 md:pl-8">
-                      <h3 className="text-sm font-bold tracking-widest text-custom-yellow uppercase mb-2">Why Choose Us</h3>
+                      <h3 className="text-sm font-bold tracking-widest text-custom-gold uppercase mb-2">Why Choose Us</h3>
                       <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
                           Digital Excellence with <br/>
-                          <span className="text-custom-yellow">Built-In Protection</span>
+                          <span className="text-custom-gold">Built-In Protection</span>
                       </h2>
                       <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                          What sets GoToGuys apart is our ability to combine standout creative solutions with a growing focus on cybersecurity.
+                          What sets SHOCKWAVE apart is our ability to combine standout creative solutions with a growing focus on cybersecurity.
                       </p>
                       
                       {/* Stylized paragraph separator */}
-                      <div className="w-16 h-1 bg-custom-yellow mb-6"></div>
+                      <div className="w-16 h-1 bg-custom-gold mb-6"></div>
 
                       <p className="text-gray-400 text-lg leading-relaxed">
                           In a world where online threats grow daily, we believe digital excellence and cyber awareness should go hand in hand. We integrate essential digital hygiene principles into our client journey.
@@ -2989,7 +2989,7 @@ const About = () => {
                         className="rounded-lg w-full h-auto transition-transform duration-300 group-hover:scale-105 team-photo" 
                       />
                       <h4 className="text-xl font-bold text-white mt-4">{member.name}</h4>
-                      <p className="text-custom-yellow">{member.title}</p>
+                      <p className="text-custom-gold">{member.title}</p>
                   </div>
                 ))}
               </div>
@@ -3207,9 +3207,9 @@ const AdminFab = ({ label = 'Edit', href = '/admin' }) => {
 return (
     <Link
       to={href}
-      className="fixed bottom-6 right-6 z-[120] flex items-center gap-2 px-4 py-3 rounded-full glass-card border border-custom-yellow/40 text-white hover:bg-custom-yellow hover:text-black transition shadow-lg"
+      className="fixed bottom-6 right-6 z-[120] flex items-center gap-2 px-4 py-3 rounded-full glass-card border border-custom-gold/40 text-white hover:bg-custom-gold hover:text-black transition shadow-lg"
     >
-      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-custom-yellow text-black font-extrabold text-xl leading-none">+</span>
+      <span className="flex items-center justify-center w-8 h-8 rounded-full bg-custom-gold text-black font-extrabold text-xl leading-none">+</span>
       <span className="text-sm font-bold uppercase tracking-widest hidden sm:inline">{label}</span>
     </Link>
   );
@@ -3313,14 +3313,14 @@ const Services = ({ navigate, addToCart }) => {
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white">Our <span className="text-custom-yellow">Services</span></h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white">Our <span className="text-custom-gold">Services</span></h1>
             <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
               From pixel-perfect designs to military-grade cybersecurity. Everything you need to build, scale, and protect your brand online.
             </p>
             {role === 'admin' && (
               <Link
                 to="/admin"
-                className="text-xs px-3 py-2 rounded border border-custom-yellow text-custom-yellow hover:bg-custom-yellow hover:text-black"
+                className="text-xs px-3 py-2 rounded border border-custom-gold text-custom-gold hover:bg-custom-gold hover:text-black"
               >
                 Edit in Admin
               </Link>
@@ -3330,21 +3330,21 @@ const Services = ({ navigate, addToCart }) => {
       
      
          <section className="py-16 md:py-24 relative overflow-hidden">
-          {/* PDF-Style Background Decor (Yellow Circles) */}
-          <div className="absolute top-20 left-0 w-64 h-64 bg-custom-yellow rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+          {/* PDF-Style Background Decor (gold Circles) */}
+          <div className="absolute top-20 left-0 w-64 h-64 bg-custom-gold rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
           
           <div className="container mx-auto px-4 md:px-6">
               <div className="flex flex-col lg:flex-row gap-16">
                   
                   {/* LEFT COLUMN: Sticky Title (Matches PDF Page 3 left side) */}
                   <div className="lg:w-1/3 lg:sticky lg:top-32 h-fit z-10">
-                      <h3 className="text-4xl font-bold tracking-widest text-custom-yellow uppercase mb-4">What Can We Do</h3>
+                      <h3 className="text-4xl font-bold tracking-widest text-custom-gold uppercase mb-4">What Can We Do</h3>
                       <h2 className="text-4xl md:text-3xl font-extrabold text-white leading-tight">
                           Services we can <br/>
                           <span className="relative inline-block">
                               help you with
-                              {/* Decorative Yellow Circle behind text */}
-                              <span className="absolute -z-10 -top-4 -right-8 w-24 h-24 bg-custom-yellow rounded-full opacity-20 blur-xl"></span>
+                              {/* Decorative gold Circle behind text */}
+                              <span className="absolute -z-10 -top-4 -right-8 w-24 h-24 bg-custom-gold rounded-full opacity-20 blur-xl"></span>
                           </span>
                       </h2>
                       <p className="text-gray-400 mt-6 text-lg">
@@ -3367,7 +3367,7 @@ const Services = ({ navigate, addToCart }) => {
                                       className={`
                                           group cursor-pointer relative overflow-hidden rounded-2xl aspect-square
                                           transition-all duration-500 border border-gray-800
-                                          ${isSelected ? 'ring-4 ring-custom-yellow shadow-[0_0_20px_rgba(253,190,51,0.4)] scale-105 z-10' : 'hover:border-gray-600 hover:scale-[1.02]'}
+                                          ${isSelected ? 'ring-4 ring-custom-gold shadow-[0_0_20px_rgba(253,190,51,0.4)] scale-105 z-10' : 'hover:border-gray-600 hover:scale-[1.02]'}
                                       `}
                                   >
                                       {/* 1. Full Background Image */}
@@ -3383,12 +3383,12 @@ const Services = ({ navigate, addToCart }) => {
 
                                       {/* 2. Content Positioned at Bottom */}
                                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 z-20">
-                                          <h3 className={`text-lg md:text-xl font-bold leading-tight transition-colors duration-300 ${isSelected ? 'text-custom-yellow' : 'text-white group-hover:text-custom-yellow'}`}>
+                                          <h3 className={`text-lg md:text-xl font-bold leading-tight transition-colors duration-300 ${isSelected ? 'text-custom-gold' : 'text-white group-hover:text-custom-gold'}`}>
                                               {service.title}
                                           </h3>
                                           
                                           {/* Animated Line */}
-                                          <div className={`h-1 bg-custom-yellow mt-3 transition-all duration-500 ${isSelected ? 'w-12' : 'w-0 group-hover:w-12'}`}></div>
+                                          <div className={`h-1 bg-custom-gold mt-3 transition-all duration-500 ${isSelected ? 'w-12' : 'w-0 group-hover:w-12'}`}></div>
                                           
                                           {/* "Viewing" Label - Only shows when selected */}
                                           {isSelected && (
@@ -3432,10 +3432,10 @@ const Services = ({ navigate, addToCart }) => {
                       textAccent = "group-hover:text-[#C0C0C0]";
                       break;
                     case 'gold':
-                      // Gold: #FDBE33 (Your Custom Yellow)
-                      tierStyles = "hover:border-[#FDBE33] hover:shadow-[0_0_30px_rgba(253,190,51,0.3)]";
-                      buttonStyles = "group-hover:bg-[#FDBE33] group-hover:text-black";
-                      textAccent = "group-hover:text-[#FDBE33]";
+                      // Gold: #D4AF37 (Your Custom gold)
+                      tierStyles = "hover:border-[#D4AF37] hover:shadow-[0_0_30px_rgba(253,190,51,0.3)]";
+                      buttonStyles = "group-hover:bg-[#D4AF37] group-hover:text-black";
+                      textAccent = "group-hover:text-[#D4AF37]";
                       break;
                     case 'platinum':
                       // Divine Blue: #3B82F6 (Royal/Electric Blue)
@@ -3529,7 +3529,7 @@ const frontierPhotos = [
 ];
 
 const LockIcon = () => (
-  <svg className="w-16 h-16 text-custom-yellow mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-16 h-16 text-custom-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
   </svg>
 );
@@ -3601,7 +3601,7 @@ const Portfolio = () => {
               <img src={photo.src} alt={photo.title} className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" />
             </div>
             <div className="relative z-40 text-center transform translate-y-2 group-hover:translate-y-0 transition duration-500">
-              <h4 className="text-xl font-bold text-white group-hover:text-custom-yellow transition">{photo.title}</h4>
+              <h4 className="text-xl font-bold text-white group-hover:text-custom-gold transition">{photo.title}</h4>
               <span className="text-xs text-gray-400 mt-2 inline-block opacity-0 group-hover:opacity-100 transition delay-100 link-underline">
                 Click to view gallery
               </span>
@@ -3651,14 +3651,14 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white">Our <span className="text-custom-yellow">Work</span></h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white">Our <span className="text-custom-gold">Work</span></h1>
             <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
               Capturing moments of endurance, precision, and raw emotion. Explore our recent public events below.
             </p>
             {role === 'admin' && (
               <Link
                 to="/admin"
-                className="text-xs px-3 py-2 rounded border border-custom-yellow text-custom-yellow hover:bg-custom-yellow hover:text-black"
+                className="text-xs px-3 py-2 rounded border border-custom-gold text-custom-gold hover:bg-custom-gold hover:text-black"
               >
                 Edit in Admin
               </Link>
@@ -3668,7 +3668,7 @@ const Portfolio = () => {
       <section className="py-6 md:py-10">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white">
-            GoToGuys <span className="text-custom-yellow">Portfolio</span>
+            SHOCKWAVE <span className="text-custom-gold">Portfolio</span>
           </h2>
           <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto mt-4">
             Two focused divisions, one shared vision. Explore photography and videography side by side.
@@ -3677,7 +3677,7 @@ const Portfolio = () => {
           <div className="gallery-bar text-center mt-10">
             <span className="gallery-label"></span>
             <a
-              href="https://gotoguysdigitalmarketing.pixieset.com/"
+              href="https://SHOCKWAVEdigitalmarketing.pixieset.com/"
               target="_blank"
               rel="noreferrer"
               className="gallery-button"
@@ -3697,13 +3697,13 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio-panel-overlay"></div>
                 <div className="portfolio-panel-content">
-                  <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">GoToGuys: Photography</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">SHOCKWAVE: Photography</p>
                   <h3 className="text-3xl font-extrabold text-white">Still frames that feel cinematic</h3>
                   <p className="text-gray-300 max-w-md">
                     Editorial photo sets, fast-moving event coverage, and private sessions with total discretion.
                   </p>
                   <a
-                    href="https://gotoguysdigitalmarketing.pixieset.com/"
+                    href="https://SHOCKWAVEdigitalmarketing.pixieset.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="panel-cta"
@@ -3717,14 +3717,14 @@ const Portfolio = () => {
                 {renderPortfolioRow(
                   "IRONMAN ISUZU 70.3",
                   ironmanPhotos,
-                  "https://gotoguysdigitalmarketing.pixieset.com/ironman2025/",
+                  "https://SHOCKWAVEdigitalmarketing.pixieset.com/ironman2025/",
                   "ironman"
                 )}
 
                 {renderPortfolioRow(
                   "FRONTIER MEDIX",
                   frontierPhotos,
-                  "https://gotoguysdigitalmarketing.pixieset.com/frontiermedix/",
+                  "https://SHOCKWAVEdigitalmarketing.pixieset.com/frontiermedix/",
                   "frontier"
                 )}
               </div>
@@ -3737,7 +3737,7 @@ const Portfolio = () => {
                 </div>
                 <div className="portfolio-panel-overlay"></div>
                 <div className="portfolio-panel-content">
-                  <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">GoToGuys: Videography</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">SHOCKWAVE: Videography</p>
                   <h3 className="text-3xl font-extrabold text-white">Wide compositions, moving stories</h3>
                   <p className="text-gray-300 max-w-md">
                     Commercial edits, launch films, and social-first reels with a clean, cinematic finish.
@@ -3751,7 +3751,7 @@ const Portfolio = () => {
               <div className="portfolio-folder">
                 {renderVideoRow(
                   "FEATURE FILM PREVIEW",
-                  "https://gotoguysdigitalmarketing.pixieset.com/"
+                  "https://SHOCKWAVEdigitalmarketing.pixieset.com/"
                 )}
               </div>
             </div>
@@ -3774,18 +3774,18 @@ const Portfolio = () => {
 
           {/* The Content */}
           <div id="private-session" className="relative z-10 py-24 px-6 text-center flex flex-col items-center justify-center">
-            <div className="bg-black/40 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-custom-yellow/30 shadow-2xl max-w-3xl">
+            <div className="bg-black/40 backdrop-blur-md p-8 md:p-12 rounded-2xl border border-custom-gold/30 shadow-2xl max-w-3xl">
               <LockIcon />
               <h3 className="text-3xl font-extrabold text-white mb-4">Private & Confidential</h3>
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
-                "Your privacy is our priority. We offer exclusive private sessions with a strict <span className="text-custom-yellow font-bold">Non-Disclosure Guarantee</span>. 
+                "Your privacy is our priority. We offer exclusive private sessions with a strict <span className="text-custom-gold font-bold">Non-Disclosure Guarantee</span>. 
                 At your request, your images remain offline never shared on our website or social media. For your eyes only."
               </p>
               
               {/* Updated to open Email */}
               <a 
-                href="mailto:gotoguys.office@gmail.com?subject=Private Session Inquiry"
-                className="mt-8 inline-block bg-transparent border border-custom-yellow text-custom-yellow px-8 py-3 rounded hover:bg-custom-yellow hover:text-black font-bold uppercase tracking-widest transition duration-300"
+                href="mailto:shockwave.office@gmail.com?subject=Private Session Inquiry"
+                className="mt-8 inline-block bg-transparent border border-custom-gold text-custom-gold px-8 py-3 rounded hover:bg-custom-gold hover:text-black font-bold uppercase tracking-widest transition duration-300"
               >
                 Book a Private Session
               </a>
@@ -3844,7 +3844,7 @@ const Blog = () => {
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white">
-            Our <span className="text-custom-yellow">Blog</span>
+            Our <span className="text-custom-gold">Blog</span>
           </h1>
           <p className="text-lg text-gray-300 mt-6 max-w-2xl mx-auto">
             Insights from the frontlines. Fresh content updates live from Firestore.
@@ -3852,7 +3852,7 @@ const Blog = () => {
           {role === 'admin' && (
             <Link
               to="/admin"
-              className="text-xs px-3 py-2 rounded border border-custom-yellow text-custom-yellow hover:bg-custom-yellow hover:text-black"
+              className="text-xs px-3 py-2 rounded border border-custom-gold text-custom-gold hover:bg-custom-gold hover:text-black"
             >
               Edit in Admin
             </Link>
@@ -3871,11 +3871,11 @@ const Blog = () => {
             <button
               key={post.id}
               onClick={() => setSelected(post)}
-              className="glass-card border border-gray-800 rounded-2xl p-6 space-y-3 text-left w-full hover:border-custom-yellow transition"
+              className="glass-card border border-gray-800 rounded-2xl p-6 space-y-3 text-left w-full hover:border-custom-gold transition"
             >
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">{post.category}</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">{post.category}</p>
                 <h3 className="text-2xl font-bold text-white">{post.title}</h3>
               </div>
               </div>
@@ -3888,7 +3888,7 @@ const Blog = () => {
               className="text-gray-100 text-base leading-7 rich-text-content"
               dangerouslySetInnerHTML={{ __html: post.excerpt }}
             />
-              <span className="text-custom-yellow font-semibold text-sm inline-flex items-center gap-2">
+              <span className="text-custom-gold font-semibold text-sm inline-flex items-center gap-2">
                 Read more
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
               </span>
@@ -3900,11 +3900,11 @@ const Blog = () => {
       {selected && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center px-4">
           <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={() => setSelected(null)}></div>
-          <div className="relative bg-custom-card border border-custom-yellow/40 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden animate-fade-in">
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-custom-yellow blur-[140px] opacity-10 pointer-events-none"></div>
+          <div className="relative bg-custom-card border border-custom-gold/40 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden animate-fade-in">
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-custom-gold blur-[140px] opacity-10 pointer-events-none"></div>
             <div className="flex justify-between items-start p-6 border-b border-gray-800">
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">{selected.category}</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">{selected.category}</p>
                 <h3 className="text-3xl font-extrabold text-white mt-1">{selected.title}</h3>
               </div>
               <button
@@ -3968,12 +3968,12 @@ const AccountRewards = ({ user }) => {
       <div className="container mx-auto px-4 md:px-6 space-y-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-custom-yellow">The GoTo Guild</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-custom-gold">The SHOCKWAVE Guild</p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mt-2">Account & Rewards</h1>
             <p className="text-gray-300 mt-3">Track your GG Points, tier progress, and missions in one place.</p>
           </div>
           {!user && (
-            <Link to="/login" className="bg-custom-yellow text-black font-bold px-4 py-3 rounded-lg shadow hover:bg-white transition">
+            <Link to="/login" className="bg-custom-gold text-black font-bold px-4 py-3 rounded-lg shadow hover:bg-white transition">
               Sign in to sync
             </Link>
           )}
@@ -3990,7 +3990,7 @@ const AccountRewards = ({ user }) => {
           <div className="glass-card border border-gray-800 rounded-xl p-6 space-y-3 md:col-span-2">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-custom-yellow">Status</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-custom-gold">Status</p>
                 <h3 className="text-2xl font-bold text-white">{loyalty.tier}</h3>
                 <p className="text-sm text-gray-400">Rolling 12m spend: R{loyalty.rollingSpend.toLocaleString()}</p>
               </div>
@@ -4000,7 +4000,7 @@ const AccountRewards = ({ user }) => {
               </div>
             </div>
             <div className="h-3 bg-gray-800 rounded-full overflow-hidden">
-              <div className="h-full bg-custom-yellow" style={{ width: `${progressPct}%` }} />
+              <div className="h-full bg-custom-gold" style={{ width: `${progressPct}%` }} />
             </div>
             <p className="text-xs text-gray-500">Cashback: Scout 3.5% | Captain 4.5% | General 5.5% ...</p>
           </div>
@@ -4019,7 +4019,7 @@ const AccountRewards = ({ user }) => {
                     <p className="text-white">{m.label}</p>
                     <p className="text-sm text-gray-400">+{m.points} GG</p>
                   </div>
-                  <span className={`text-xs px-3 py-1 rounded-full ${m.completed ? 'bg-custom-yellow text-black font-bold' : 'border border-gray-700 text-gray-300'}`}>
+                  <span className={`text-xs px-3 py-1 rounded-full ${m.completed ? 'bg-custom-gold text-black font-bold' : 'border border-gray-700 text-gray-300'}`}>
                     {m.completed ? 'Completed' : 'Available'}
                   </span>
                 </div>
@@ -4045,7 +4045,7 @@ const AccountRewards = ({ user }) => {
                 </div>
               ))}
             </div>
-            <Link to="/rewards" className="block text-center text-sm text-custom-yellow mt-2 hover:underline">
+            <Link to="/rewards" className="block text-center text-sm text-custom-gold mt-2 hover:underline">
               View stamps & rewards
             </Link>
           </div>
@@ -4103,16 +4103,16 @@ const SecureCheckout = ({ cart, checkoutUser }) => {
     <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4">
         <div className="text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Proceeding to Payment Gateway...</h2>
-            <div className="glass-card p-8 rounded-xl max-w-md mx-auto border border-custom-yellow/30">
+            <div className="glass-card p-8 rounded-xl max-w-md mx-auto border border-custom-gold/30">
                 <p className="text-gray-300 mb-6">You are about to be redirected to a secure payment page.</p>
-                <div className="flex justify-between text-xl font-bold text-custom-yellow mb-8 border-t border-b border-gray-700 py-4">
+                <div className="flex justify-between text-xl font-bold text-custom-gold mb-8 border-t border-b border-gray-700 py-4">
                     <span>Total to Pay</span>
                     <span>R {total}</span>
                 </div>
                 
                 <button 
                     onClick={handleProceedToPayment}
-                    className="w-full bg-custom-yellow text-black font-extrabold text-lg py-4 rounded-lg hover:bg-white transition duration-300 shadow-lg"
+                    className="w-full bg-custom-gold text-black font-extrabold text-lg py-4 rounded-lg hover:bg-white transition duration-300 shadow-lg"
                 >
                     Click to Pay Now
                 </button>

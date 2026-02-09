@@ -83,16 +83,16 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
         <div className="absolute bottom-20 right-0 w-[calc(100vw-2.5rem)] max-w-sm h-[70vh] max-h-[620px] rounded-2xl shadow-[0_18px_48px_rgba(0,0,0,0.55)] flex flex-col overflow-hidden border border-[#2b2b2b] bg-gradient-to-b from-[#141414] via-[#0f0f0f] to-[#0b0b0b]">
             <header className="p-4 bg-[#121212]/95 backdrop-blur border-b border-[#222] flex justify-between items-center">
                 <div className="flex flex-col">
-                    <h2 className="text-lg font-bold text-white">GoToGuys AI Assistant</h2>
+                    <h2 className="text-lg font-bold text-white">SHOCKWAVE AI Assistant</h2>
                     <p className="text-xs text-gray-400">Creative support for shoots, branding, and marketing.</p>
-                    <p className="mt-1 text-[11px] text-[#FDBE33] flex items-center">
-                        <span className="w-2 h-2 bg-[#FDBE33] rounded-full mr-1.5"></span>
+                    <p className="mt-1 text-[11px] text-[#D4AF37] flex items-center">
+                        <span className="w-2 h-2 bg-[#D4AF37] rounded-full mr-1.5"></span>
                         Online
                     </p>
                 </div>
                 <button
                     onClick={onClose}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2a2a2a] text-gray-400 transition hover:border-[#FDBE33] hover:text-white"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[#2a2a2a] text-gray-400 transition hover:border-[#D4AF37] hover:text-white"
                     aria-label="Minimize chat"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor" className="w-5 h-5">
@@ -117,7 +117,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
 
             <footer className={`p-4 bg-[#0f0f0f] ${!showQuickReplies ? 'border-t border-[#222]' : ''}`}>
                 {error && (
-                    <div className="mb-3 rounded-lg border border-[#3a2a10] bg-[#1b1305] px-3 py-2 text-xs text-[#FDBE33]">
+                    <div className="mb-3 rounded-lg border border-[#3a2a10] bg-[#1b1305] px-3 py-2 text-xs text-[#D4AF37]">
                         {error}
                     </div>
                 )}
@@ -127,13 +127,13 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ isOpen, onClose }) => {
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
                         placeholder="Ask about services, pricing, or availability..."
-                        className="flex-1 rounded-lg border border-[#2a2a2a] bg-[#151515] px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FDBE33]/50"
+                        className="flex-1 rounded-lg border border-[#2a2a2a] bg-[#151515] px-3 py-2 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]/50"
                         disabled={isLoading}
                     />
                     <button
                         type="submit"
                         disabled={isLoading || !inputValue.trim()}
-                        className="rounded-lg border border-[#2a2a2a] bg-[#FDBE33] p-2 text-black transition hover:bg-[#ffd36a] disabled:opacity-50"
+                        className="rounded-lg border border-[#2a2a2a] bg-[#D4AF37] p-2 text-black transition hover:bg-[#ffd36a] disabled:opacity-50"
                         aria-label="Send message"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.6} stroke="currentColor" className="w-5 h-5">

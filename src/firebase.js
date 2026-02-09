@@ -31,9 +31,9 @@ import {
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyABNEOxM34YDCTHhBFAdkfZR-k0CiIAZHA",
-  authDomain: "gotoguys-web.firebaseapp.com",
-  projectId: "gotoguys-web",
-  storageBucket: "gotoguys-web.firebasestorage.app",
+  authDomain: "shockwave-web.firebaseapp.com",
+  projectId: "shockwave-web",
+  storageBucket: "shockwave-web.firebasestorage.app",
   messagingSenderId: "975443943258",
   appId: "1:975443943258:web:403c932f2e657780681d63",
   measurementId: "G-TEZKJTQDXD"

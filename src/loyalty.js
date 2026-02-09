@@ -1,4 +1,4 @@
-// Loyalty program constants and helpers for "The GoTo Guild"
+// Loyalty program constants and helpers for "The SHOCKWAVE Guild"
 export const CURRENCY_NAME = 'GG Points';
 // Base earn rate is now tiered by rolling spend; see TIERS for brackets.
 // 1 GG = R1 redemption value stays the same.

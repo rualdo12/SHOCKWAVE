@@ -64,8 +64,8 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen bg-custom-dark flex items-center justify-center px-4 py-10">
       <div className="grid w-full max-w-4xl gap-6 md:grid-cols-2">
-        <div className="glass-card rounded-2xl p-8 border border-custom-yellow/30">
-          <p className="text-custom-yellow text-xs uppercase tracking-[0.35em] mb-2">Account access</p>
+        <div className="glass-card rounded-2xl p-8 border border-custom-gold/30">
+          <p className="text-custom-gold text-xs uppercase tracking-[0.35em] mb-2">Account access</p>
           <h1 className="text-3xl font-extrabold text-white mb-2">Welcome</h1>
           <p className="text-gray-400 text-sm mb-6">
             Sign in or create a new account to manage orders, rewards, and admin access.
@@ -77,14 +77,14 @@ const LoginPage = () => {
           </ul>
         </div>
 
-        <div className="glass-card rounded-2xl p-8 border border-custom-yellow/30">
+        <div className="glass-card rounded-2xl p-8 border border-custom-gold/30">
           <div className="flex gap-2 mb-6">
             <button
               onClick={() => { setMode('login'); setError(''); }}
               className={`flex-1 py-2 rounded-lg font-bold transition ${
                 mode === 'login'
-                  ? 'bg-custom-yellow text-black shadow'
-                  : 'bg-custom-gray text-white hover:border-custom-yellow border border-white/10'
+                  ? 'bg-custom-gold text-black shadow'
+                  : 'bg-custom-gray text-white hover:border-custom-gold border border-white/10'
               }`}
               disabled={loading}
             >
@@ -94,8 +94,8 @@ const LoginPage = () => {
               onClick={() => { setMode('signup'); setError(''); }}
               className={`flex-1 py-2 rounded-lg font-bold transition ${
                 mode === 'signup'
-                  ? 'bg-custom-yellow text-black shadow'
-                  : 'bg-custom-gray text-white hover:border-custom-yellow border border-white/10'
+                  ? 'bg-custom-gold text-black shadow'
+                  : 'bg-custom-gray text-white hover:border-custom-gold border border-white/10'
               }`}
               disabled={loading}
             >
@@ -108,7 +108,7 @@ const LoginPage = () => {
             className="space-y-3"
           >
             <input
-              className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-yellow focus:outline-none transition"
+              className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-gold focus:outline-none transition"
               placeholder="Email"
               type="email"
               value={form.email}
@@ -116,7 +116,7 @@ const LoginPage = () => {
               required
             />
             <input
-              className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-yellow focus:outline-none transition"
+              className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-gold focus:outline-none transition"
               placeholder="Password"
               type="password"
               value={form.password}
@@ -125,7 +125,7 @@ const LoginPage = () => {
             />
             {mode === 'signup' && (
               <input
-                className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-yellow focus:outline-none transition"
+                className="w-full bg-custom-gray text-white px-3 py-3 rounded border border-white/10 focus:border-custom-gold focus:outline-none transition"
                 placeholder="Confirm password"
                 type="password"
                 value={confirmPassword}
@@ -135,7 +135,7 @@ const LoginPage = () => {
             )}
             <button
               disabled={loading}
-              className="w-full bg-custom-yellow text-black font-bold py-3 rounded hover:bg-white transition disabled:opacity-50"
+              className="w-full bg-custom-gold text-black font-bold py-3 rounded hover:bg-white transition disabled:opacity-50"
             >
               {loading ? 'Please wait...' : mode === 'login' ? 'Sign in' : 'Create account'}
             </button>
@@ -146,14 +146,14 @@ const LoginPage = () => {
           <button
             onClick={handleGoogle}
             disabled={loading}
-            className="w-full border border-custom-yellow text-custom-yellow font-bold py-3 rounded hover:bg-custom-yellow hover:text-black transition disabled:opacity-50"
+            className="w-full border border-custom-gold text-custom-gold font-bold py-3 rounded hover:bg-custom-gold hover:text-black transition disabled:opacity-50"
           >
             Continue with Google
           </button>
 
           {error && <p className="text-red-400 text-sm mt-4">{error}</p>}
           <p className="text-gray-500 text-xs mt-3">
-            By continuing you agree to receive GoToGuys updates. Opt out anytime.
+            By continuing you agree to receive SHOCKWAVE updates. Opt out anytime.
           </p>
         </div>
       </div>

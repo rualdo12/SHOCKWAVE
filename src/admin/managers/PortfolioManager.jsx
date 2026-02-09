@@ -76,7 +76,7 @@ const PortfolioManager = () => {
       description="Manage portfolio cards and galleries."
       onCreate={() => { setEditing('new'); setForm(empty); setStatus(''); }}
     >
-      {status && <div className="text-sm text-custom-yellow">{status}</div>}
+      {status && <div className="text-sm text-custom-gold">{status}</div>}
       {editing && (
         <div className="glass-card p-4 rounded-lg border border-gray-700 space-y-3">
           <input className="w-full bg-gray-800 text-white px-3 py-2 rounded" placeholder="Title"
@@ -99,7 +99,7 @@ const PortfolioManager = () => {
             placeholder="Tags (comma separated)" value={form.tags}
             onChange={(e) => setForm({ ...form, tags: e.target.value })} />
           <div className="flex gap-2">
-            <button onClick={save} className="bg-custom-yellow text-black px-4 py-2 rounded font-bold">Save</button>
+            <button onClick={save} className="bg-custom-gold text-black px-4 py-2 rounded font-bold">Save</button>
             <button onClick={() => setEditing(null)} className="px-4 py-2 rounded border border-gray-700">Cancel</button>
           </div>
         </div>
@@ -111,7 +111,7 @@ const PortfolioManager = () => {
             <div className="flex justify-between">
               <h3 className="text-xl font-bold">{item.title}</h3>
               <div className="space-x-2 text-sm">
-                <button onClick={() => { setEditing(item.id); setForm({ ...item, tags: (item.tags || []).join(', ') }); }} className="text-custom-yellow">Edit</button>
+                <button onClick={() => { setEditing(item.id); setForm({ ...item, tags: (item.tags || []).join(', ') }); }} className="text-custom-gold">Edit</button>
                 <button onClick={() => remove(item.id)} className="text-red-400">Delete</button>
               </div>
             </div>

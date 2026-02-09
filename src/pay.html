@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Payment - GoToGuys</title>
+    <title>Secure Payment - SHOCKWAVE</title>
     <script src="https://js.yoco.com/sdk/v1/yoco-sdk-web.js"></script>
     <style>
         body {
@@ -19,7 +19,7 @@
         }
         .loader {
             border: 4px solid #333;
-            border-top: 4px solid #FDBE33; /* Custom Yellow */
+            border-top: 4px solid #D4AF37; /* Custom gold */
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -69,7 +69,7 @@
             yoco.showPopup({
                 amountInCents: amount,
                 currency: 'ZAR',
-                name: 'GoToGuys Checkout',
+                name: 'SHOCKWAVE Checkout',
                 description: 'Order for ' + name,
                 callback: async function(result) {
                     if (result.error) {

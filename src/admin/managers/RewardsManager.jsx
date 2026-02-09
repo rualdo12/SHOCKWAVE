@@ -146,7 +146,7 @@ const RewardsManager = () => {
             key={r.id}
             onClick={() => setSelected(r.id)}
             className={`px-3 py-2 rounded border text-sm ${
-              (selected || records[0]?.id) === r.id ? 'border-custom-yellow text-black bg-custom-yellow' : 'border-gray-700 text-gray-200'
+              (selected || records[0]?.id) === r.id ? 'border-custom-gold text-black bg-custom-gold' : 'border-gray-700 text-gray-200'
             }`}
           >
             {r.userEmail || r.id}
@@ -154,14 +154,14 @@ const RewardsManager = () => {
         ))}
       </div>
 
-      {status && <p className="text-sm text-custom-yellow mb-3">{status}</p>}
+      {status && <p className="text-sm text-custom-gold mb-3">{status}</p>}
 
       {selectedRecord ? (
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="glass-card border border-custom-yellow/30 rounded-xl p-4 space-y-4">
+          <div className="glass-card border border-custom-gold/30 rounded-xl p-4 space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs uppercase tracking-[0.25em] text-custom-yellow">Progress</p>
+                <p className="text-xs uppercase tracking-[0.25em] text-custom-gold">Progress</p>
                 <h3 className="text-xl font-bold text-white">
                   Collected: {(selectedRecord.collectedStamps || []).length}/{REQUIRED_STAMP_COUNT}
                 </h3>
@@ -188,13 +188,13 @@ const RewardsManager = () => {
                   key={stamp.id}
                   className={`rounded-lg p-3 border text-center ${
                     stamp.filled
-                      ? 'border-custom-yellow bg-custom-yellow/15 text-white'
+                      ? 'border-custom-gold bg-custom-gold/15 text-white'
                       : 'border-gray-800 bg-black/30 text-gray-400'
                   }`}
                 >
                   <div
                     className={`w-10 h-10 mx-auto rounded-full flex items-center justify-center font-extrabold ${
-                      stamp.filled ? 'bg-custom-yellow text-black' : 'bg-gray-800 text-white'
+                      stamp.filled ? 'bg-custom-gold text-black' : 'bg-gray-800 text-white'
                     }`}
                   >
                     {idx + 1}
@@ -220,7 +220,7 @@ const RewardsManager = () => {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={handleAddNext}
-                  className="px-4 py-2 rounded bg-custom-yellow text-black font-bold hover:bg-white transition"
+                  className="px-4 py-2 rounded bg-custom-gold text-black font-bold hover:bg-white transition"
                 >
                   Add Next Stamp
                 </button>

@@ -4,6 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: "/SHOCKWAVE/",
   build: {
     // Output to a folder named 'dist'
     outDir: 'dist',
@@ -15,8 +16,8 @@ export default defineConfig({
       },
       output: {
         // Force specific filenames so we can enqueue them in PHP easily
-        entryFileNames: `assets/gotoguys-main.js`,
-        assetFileNames: `assets/gotoguys-style.[ext]`,
+        entryFileNames: `assets/SHOCKWAVE-main.js`,
+        assetFileNames: `assets/SHOCKWAVE-style.[ext]`,
       }
     }
   }
