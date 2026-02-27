@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login
+Disallow: /account
+Disallow: /cart
+Disallow: /checkout
+Disallow: /reward
+Disallow: /rewards
+
+Sitemap: https://shockwave.live/sitemap.xml
