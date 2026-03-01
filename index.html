@@ -5,6 +5,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/shockwave-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          const decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (segment) {
+              return segment.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            '',
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
     <meta name="description" content="SHOCKWAVE Systems builds consultant-first brand infrastructure: positioning, websites, LinkedIn systems, and conversion automation." />
     <meta name="keywords" content="consultant branding, linkedin growth, conversion systems, brand strategy, shockwave systems" />
     <meta name="robots" content="index, follow" />
