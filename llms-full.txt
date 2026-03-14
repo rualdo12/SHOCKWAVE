@@ -1,13 +1,13 @@
 # SHOCKWAVE Systems - Full AI Content Map
 
 Site: https://shockwave.live
-Generated: 2026-03-14T09:17:38.657Z
+Generated: 2026-03-14T09:38:58.283Z
 
 ## Pages
-- Title: SHOCKWAVE Systems | Credibility Systems for Mining Consultants
+- Title: Book a 48-Hour Credibility Teardown | SHOCKWAVE Systems
   URL: https://shockwave.live
   Type: home
-  Description: Build trust faster with technical positioning, conversion-ready website architecture, and proof assets for mining consultants.
+  Description: For independent mining consultants and specialist technical firms: book a 48-hour credibility teardown to fix trust leaks, proof gaps, and shortlist friction.
 - Title: About SHOCKWAVE Systems | Mining Consultant Credibility Specialists
   URL: https://shockwave.live/about
   Type: page
