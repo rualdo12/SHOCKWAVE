@@ -1,4 +1,24 @@
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 User-agent: *
 Allow: /
+
+# AI discovery files:
+# https://shockwave.live/llms.txt
+# https://shockwave.live/llms-full.txt
+# https://shockwave.live/ai-index.json
 
 Sitemap: https://shockwave.live/sitemap.xml

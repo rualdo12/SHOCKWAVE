@@ -1,0 +1,41 @@
+# SHOCKWAVE Systems
+> Credibility Systems for Mining Consultants
+
+Site: https://shockwave.live
+Updated: 2026-03-14
+
+## Crawl Access
+- Public pages are available for indexing and summarization.
+- Private/auth pages should not be indexed.
+
+## Discovery Files
+- Robots: https://shockwave.live/robots.txt
+- Sitemap: https://shockwave.live/sitemap.xml
+- AI Index JSON: https://shockwave.live/ai-index.json
+- LLM Full Map: https://shockwave.live/llms-full.txt
+
+## Core Pages
+- SHOCKWAVE Systems | Credibility Systems for Mining Consultants: https://shockwave.live
+- About SHOCKWAVE Systems | Mining Consultant Credibility Specialists: https://shockwave.live/about
+- Mining Consultant Growth Blog | SHOCKWAVE Systems: https://shockwave.live/blog
+- Contact SHOCKWAVE Systems | Book a Qualified Strategy Conversation: https://shockwave.live/contact
+- Mining Consultant Proof Portfolio | SHOCKWAVE Systems: https://shockwave.live/portfolio
+- Privacy Notice | SHOCKWAVE Systems: https://shockwave.live/privacy
+- Mining Consultant Growth Services | SHOCKWAVE Systems: https://shockwave.live/services
+- Terms of Use | SHOCKWAVE Systems: https://shockwave.live/terms
+
+## Service Pages
+- Brand Positioning for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/brand-positioning
+- LinkedIn Growth for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/linkedin-growth-content
+- Web Conversion Systems for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/web-conversion-systems
+
+## Blog Posts
+- Why Mining Consultants Need a LinkedIn Credibility Engine, Not More Content: https://shockwave.live/linkedin-content-engine-mining-consultants
+- Why Mining Buyers Need a Proof Trail, Not Just Promises: https://shockwave.live/mining-consultant-proof-testimonials-case-studies
+- Why a Mining Consultant Website Must Start Conversations (Not Just Look Good): https://shockwave.live/mining-consultant-website-starts-conversations
+- Why Strong Mining Consultants Still Get Overlooked Without Shortlist-Ready Positioning: https://shockwave.live/positioning-that-wins-mining-consulting-work
+
+## Contact
+- Email: rualdo@shockwave.live
+- Phone: +27 71 896 9596
+- LinkedIn: https://www.linkedin.com/in/rualdo-kruger-031488298/

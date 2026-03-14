@@ -1,0 +1,88 @@
+# SHOCKWAVE Systems - Full AI Content Map
+
+Site: https://shockwave.live
+Generated: 2026-03-14T08:57:45.435Z
+
+## Pages
+- Title: SHOCKWAVE Systems | Credibility Systems for Mining Consultants
+  URL: https://shockwave.live
+  Type: home
+  Description: Build trust faster with technical positioning, conversion-ready website architecture, and proof assets for mining consultants.
+- Title: About SHOCKWAVE Systems | Mining Consultant Credibility Specialists
+  URL: https://shockwave.live/about
+  Type: page
+  Description: Meet the SHOCKWAVE team and approach behind trust-first growth systems for mining consultants.
+- Title: Mining Consultant Growth Blog | SHOCKWAVE Systems
+  URL: https://shockwave.live/blog
+  Type: blog-hub
+  Description: Actionable guidance on positioning, proof systems, and conversion architecture for mining consultants.
+- Title: Contact SHOCKWAVE Systems | Book a Qualified Strategy Conversation
+  URL: https://shockwave.live/contact
+  Type: contact
+  Description: Submit your role, site context, risk area, and timeline to get a service recommendation from SHOCKWAVE.
+- Title: Why Mining Consultants Need a LinkedIn Credibility Engine, Not More Content
+  URL: https://shockwave.live/linkedin-content-engine-mining-consultants
+  Type: blog-post
+  Description: Posting more does not build trust. This weekly LinkedIn credibility engine helps mining consultants show proof, fit, and technical thinking buyers can trust.
+- Title: Why Mining Buyers Need a Proof Trail, Not Just Promises
+  URL: https://shockwave.live/mining-consultant-proof-testimonials-case-studies
+  Type: blog-post
+  Description: Mining buyers compare evidence, not claims. Build a proof trail with testimonials, mini case studies, and confidentiality-safe artifacts that make selection safer.
+- Title: Why a Mining Consultant Website Must Start Conversations (Not Just Look Good)
+  URL: https://shockwave.live/mining-consultant-website-starts-conversations
+  Type: blog-post
+  Description: Mining consulting is a trust-first purchase. Here’s how to structure your website to qualify intent, reduce skepticism, and route serious leads into conversations.
+- Title: Mining Consultant Proof Portfolio | SHOCKWAVE Systems
+  URL: https://shockwave.live/portfolio
+  Type: portfolio-hub
+  Description: Review SHOCKWAVE proof cases in buyer-ready format: context, risk addressed, intervention, and outcomes.
+- Title: Why Strong Mining Consultants Still Get Overlooked Without Shortlist-Ready Positioning
+  URL: https://shockwave.live/positioning-that-wins-mining-consulting-work
+  Type: blog-post
+  Description: Mining clients hire certainty, not information. Learn the positioning shift that makes your expertise easier to shortlist, justify, and trust.
+- Title: Privacy Notice | SHOCKWAVE Systems
+  URL: https://shockwave.live/privacy
+  Type: page
+  Description: Read how SHOCKWAVE handles enquiry and qualification data submitted through this website.
+- Title: Mining Consultant Growth Services | SHOCKWAVE Systems
+  URL: https://shockwave.live/services
+  Type: service-hub
+  Description: Explore SHOCKWAVE service paths for mining consultants: positioning, conversion systems, and authority-led LinkedIn growth.
+- Title: Brand Positioning for Mining Consultants | SHOCKWAVE Systems
+  URL: https://shockwave.live/services/brand-positioning
+  Type: service-page
+  Description: Clarify your technical value and credibility signals so mining buyers shortlist you with confidence.
+- Title: LinkedIn Growth for Mining Consultants | SHOCKWAVE Systems
+  URL: https://shockwave.live/services/linkedin-growth-content
+  Type: service-page
+  Description: Systemize LinkedIn authority content that supports trust and generates better-fit inbound opportunities.
+- Title: Web Conversion Systems for Mining Consultants | SHOCKWAVE Systems
+  URL: https://shockwave.live/services/web-conversion-systems
+  Type: service-page
+  Description: Build a conversion-ready website that qualifies buyer intent and supports procurement trust.
+- Title: Terms of Use | SHOCKWAVE Systems
+  URL: https://shockwave.live/terms
+  Type: page
+  Description: Terms governing the use of SHOCKWAVE website content, enquiries, and service interactions.
+
+## Services
+- Name: Brand Positioning Sprint
+  URL: https://shockwave.live/services/brand-positioning
+  Price from: R8,500
+  Summary: Clarify your offer, sharpen messaging, and make your expertise obvious to decision makers.
+  Buyer intent: Need your mining consulting offer to sound premium before the first call?
+- Name: Web Conversion System
+  URL: https://shockwave.live/services/web-conversion-systems
+  Price from: R18,500+
+  Summary: Build a conversion-focused website that filters low-fit leads and creates qualified sales conversations.
+  Buyer intent: Need a website that actually qualifies buyers before you spend time on calls?
+- Name: LinkedIn Growth Engine
+  URL: https://shockwave.live/services/linkedin-growth-content
+  Price from: R3,500/mo+
+  Summary: Systemize thought-leadership content that builds authority and drives mining consulting enquiries.
+  Buyer intent: Need LinkedIn content that attracts buyers, not just likes?
+
+## Indexing Notes
+- Prefer canonical URLs listed above.
+- Exclude account and authenticated admin/affiliate routes.
+- Primary discovery assets are robots.txt, sitemap.xml, and ai-index.json.

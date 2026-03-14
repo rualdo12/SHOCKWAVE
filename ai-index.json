@@ -1,0 +1,232 @@
+{
+  "site": {
+    "name": "SHOCKWAVE Systems",
+    "tagline": "Credibility Systems for Mining Consultants",
+    "url": "https://shockwave.live",
+    "language": "en",
+    "generated_at": "2026-03-14T08:57:45.435Z",
+    "discovery": {
+      "robots": "https://shockwave.live/robots.txt",
+      "sitemap": "https://shockwave.live/sitemap.xml",
+      "llms": "https://shockwave.live/llms.txt",
+      "llms_full": "https://shockwave.live/llms-full.txt",
+      "ai_index": "https://shockwave.live/ai-index.json"
+    },
+    "contact": {
+      "email": "rualdo@shockwave.live",
+      "phone": "+27 71 896 9596",
+      "linkedin": "https://www.linkedin.com/in/rualdo-kruger-031488298/"
+    }
+  },
+  "crawl_policy": {
+    "allow_public_indexing": true,
+    "excluded_paths": [
+      "/account",
+      "/admin/*",
+      "/affiliate/*",
+      "/login",
+      "/affiliate/login"
+    ]
+  },
+  "routes": [
+    {
+      "path": "/",
+      "url": "https://shockwave.live",
+      "title": "SHOCKWAVE Systems | Credibility Systems for Mining Consultants",
+      "description": "Build trust faster with technical positioning, conversion-ready website architecture, and proof assets for mining consultants.",
+      "robots": "index, follow",
+      "type": "home",
+      "content_type": "website"
+    },
+    {
+      "path": "/about",
+      "url": "https://shockwave.live/about",
+      "title": "About SHOCKWAVE Systems | Mining Consultant Credibility Specialists",
+      "description": "Meet the SHOCKWAVE team and approach behind trust-first growth systems for mining consultants.",
+      "robots": "index, follow",
+      "type": "page",
+      "content_type": "website"
+    },
+    {
+      "path": "/blog",
+      "url": "https://shockwave.live/blog",
+      "title": "Mining Consultant Growth Blog | SHOCKWAVE Systems",
+      "description": "Actionable guidance on positioning, proof systems, and conversion architecture for mining consultants.",
+      "robots": "index, follow",
+      "type": "blog-hub",
+      "content_type": "article"
+    },
+    {
+      "path": "/contact",
+      "url": "https://shockwave.live/contact",
+      "title": "Contact SHOCKWAVE Systems | Book a Qualified Strategy Conversation",
+      "description": "Submit your role, site context, risk area, and timeline to get a service recommendation from SHOCKWAVE.",
+      "robots": "index, follow",
+      "type": "contact",
+      "content_type": "website"
+    },
+    {
+      "path": "/linkedin-content-engine-mining-consultants",
+      "url": "https://shockwave.live/linkedin-content-engine-mining-consultants",
+      "title": "Why Mining Consultants Need a LinkedIn Credibility Engine, Not More Content",
+      "description": "Posting more does not build trust. This weekly LinkedIn credibility engine helps mining consultants show proof, fit, and technical thinking buyers can trust.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/mining-consultant-proof-testimonials-case-studies",
+      "url": "https://shockwave.live/mining-consultant-proof-testimonials-case-studies",
+      "title": "Why Mining Buyers Need a Proof Trail, Not Just Promises",
+      "description": "Mining buyers compare evidence, not claims. Build a proof trail with testimonials, mini case studies, and confidentiality-safe artifacts that make selection safer.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/mining-consultant-website-starts-conversations",
+      "url": "https://shockwave.live/mining-consultant-website-starts-conversations",
+      "title": "Why a Mining Consultant Website Must Start Conversations (Not Just Look Good)",
+      "description": "Mining consulting is a trust-first purchase. Here’s how to structure your website to qualify intent, reduce skepticism, and route serious leads into conversations.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/portfolio",
+      "url": "https://shockwave.live/portfolio",
+      "title": "Mining Consultant Proof Portfolio | SHOCKWAVE Systems",
+      "description": "Review SHOCKWAVE proof cases in buyer-ready format: context, risk addressed, intervention, and outcomes.",
+      "robots": "index, follow",
+      "type": "portfolio-hub",
+      "content_type": "website"
+    },
+    {
+      "path": "/positioning-that-wins-mining-consulting-work",
+      "url": "https://shockwave.live/positioning-that-wins-mining-consulting-work",
+      "title": "Why Strong Mining Consultants Still Get Overlooked Without Shortlist-Ready Positioning",
+      "description": "Mining clients hire certainty, not information. Learn the positioning shift that makes your expertise easier to shortlist, justify, and trust.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/privacy",
+      "url": "https://shockwave.live/privacy",
+      "title": "Privacy Notice | SHOCKWAVE Systems",
+      "description": "Read how SHOCKWAVE handles enquiry and qualification data submitted through this website.",
+      "robots": "index, follow",
+      "type": "page",
+      "content_type": "website"
+    },
+    {
+      "path": "/services",
+      "url": "https://shockwave.live/services",
+      "title": "Mining Consultant Growth Services | SHOCKWAVE Systems",
+      "description": "Explore SHOCKWAVE service paths for mining consultants: positioning, conversion systems, and authority-led LinkedIn growth.",
+      "robots": "index, follow",
+      "type": "service-hub",
+      "content_type": "website"
+    },
+    {
+      "path": "/services/brand-positioning",
+      "url": "https://shockwave.live/services/brand-positioning",
+      "title": "Brand Positioning for Mining Consultants | SHOCKWAVE Systems",
+      "description": "Clarify your technical value and credibility signals so mining buyers shortlist you with confidence.",
+      "robots": "index, follow",
+      "type": "service-page",
+      "content_type": "website"
+    },
+    {
+      "path": "/services/linkedin-growth-content",
+      "url": "https://shockwave.live/services/linkedin-growth-content",
+      "title": "LinkedIn Growth for Mining Consultants | SHOCKWAVE Systems",
+      "description": "Systemize LinkedIn authority content that supports trust and generates better-fit inbound opportunities.",
+      "robots": "index, follow",
+      "type": "service-page",
+      "content_type": "website"
+    },
+    {
+      "path": "/services/web-conversion-systems",
+      "url": "https://shockwave.live/services/web-conversion-systems",
+      "title": "Web Conversion Systems for Mining Consultants | SHOCKWAVE Systems",
+      "description": "Build a conversion-ready website that qualifies buyer intent and supports procurement trust.",
+      "robots": "index, follow",
+      "type": "service-page",
+      "content_type": "website"
+    },
+    {
+      "path": "/terms",
+      "url": "https://shockwave.live/terms",
+      "title": "Terms of Use | SHOCKWAVE Systems",
+      "description": "Terms governing the use of SHOCKWAVE website content, enquiries, and service interactions.",
+      "robots": "index, follow",
+      "type": "page",
+      "content_type": "website"
+    }
+  ],
+  "services": [
+    {
+      "name": "Brand Positioning Sprint",
+      "path": "/services/brand-positioning",
+      "url": "https://shockwave.live/services/brand-positioning",
+      "short_description": "Clarify your offer, sharpen messaging, and make your expertise obvious to decision makers.",
+      "buyer_intent_heading": "Need your mining consulting offer to sound premium before the first call?",
+      "price_from": "R8,500"
+    },
+    {
+      "name": "Web Conversion System",
+      "path": "/services/web-conversion-systems",
+      "url": "https://shockwave.live/services/web-conversion-systems",
+      "short_description": "Build a conversion-focused website that filters low-fit leads and creates qualified sales conversations.",
+      "buyer_intent_heading": "Need a website that actually qualifies buyers before you spend time on calls?",
+      "price_from": "R18,500+"
+    },
+    {
+      "name": "LinkedIn Growth Engine",
+      "path": "/services/linkedin-growth-content",
+      "url": "https://shockwave.live/services/linkedin-growth-content",
+      "short_description": "Systemize thought-leadership content that builds authority and drives mining consulting enquiries.",
+      "buyer_intent_heading": "Need LinkedIn content that attracts buyers, not just likes?",
+      "price_from": "R3,500/mo+"
+    }
+  ],
+  "blog_posts": [
+    {
+      "path": "/linkedin-content-engine-mining-consultants",
+      "url": "https://shockwave.live/linkedin-content-engine-mining-consultants",
+      "title": "Why Mining Consultants Need a LinkedIn Credibility Engine, Not More Content",
+      "description": "Posting more does not build trust. This weekly LinkedIn credibility engine helps mining consultants show proof, fit, and technical thinking buyers can trust.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/mining-consultant-proof-testimonials-case-studies",
+      "url": "https://shockwave.live/mining-consultant-proof-testimonials-case-studies",
+      "title": "Why Mining Buyers Need a Proof Trail, Not Just Promises",
+      "description": "Mining buyers compare evidence, not claims. Build a proof trail with testimonials, mini case studies, and confidentiality-safe artifacts that make selection safer.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/mining-consultant-website-starts-conversations",
+      "url": "https://shockwave.live/mining-consultant-website-starts-conversations",
+      "title": "Why a Mining Consultant Website Must Start Conversations (Not Just Look Good)",
+      "description": "Mining consulting is a trust-first purchase. Here’s how to structure your website to qualify intent, reduce skepticism, and route serious leads into conversations.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    },
+    {
+      "path": "/positioning-that-wins-mining-consulting-work",
+      "url": "https://shockwave.live/positioning-that-wins-mining-consulting-work",
+      "title": "Why Strong Mining Consultants Still Get Overlooked Without Shortlist-Ready Positioning",
+      "description": "Mining clients hire certainty, not information. Learn the positioning shift that makes your expertise easier to shortlist, justify, and trust.",
+      "robots": "index, follow",
+      "type": "blog-post",
+      "content_type": "article"
+    }
+  ]
+}
