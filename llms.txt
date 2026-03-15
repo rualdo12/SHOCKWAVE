@@ -2,7 +2,7 @@
 > Credibility Systems for Mining Consultants
 
 Site: https://shockwave.live
-Updated: 2026-03-14
+Updated: 2026-03-15
 
 ## Crawl Access
 - Public pages are available for indexing and summarization.
