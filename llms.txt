@@ -1,8 +1,8 @@
 # SHOCKWAVE Systems
-> Credibility Systems for Mining Consultants
+> Credibility Systems for Mining Consultants and Technical Firms
 
 Site: https://shockwave.live
-Updated: 2026-03-15
+Updated: 2026-03-23
 
 ## Crawl Access
 - Public pages are available for indexing and summarization.
@@ -15,19 +15,17 @@ Updated: 2026-03-15
 - LLM Full Map: https://shockwave.live/llms-full.txt
 
 ## Core Pages
-- Book a 48-Hour Credibility Teardown | SHOCKWAVE Systems: https://shockwave.live
-- About SHOCKWAVE Systems | Mining Consultant Credibility Specialists: https://shockwave.live/about
-- Mining Consultant Growth Blog | SHOCKWAVE Systems: https://shockwave.live/blog
-- Contact SHOCKWAVE Systems | Book a Qualified Strategy Conversation: https://shockwave.live/contact
-- Mining Consultant Proof Portfolio | SHOCKWAVE Systems: https://shockwave.live/portfolio
+- Credibility Systems for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live
+- About SHOCKWAVE Systems | Credibility Systems for Technical Firms: https://shockwave.live/about
+- Credibility and Buyer Confidence Insights | SHOCKWAVE Systems: https://shockwave.live/blog
+- Contact SHOCKWAVE Systems | Start the Right Credibility Conversation: https://shockwave.live/book
+- Contact SHOCKWAVE Systems | Start the Right Credibility Conversation: https://shockwave.live/contact
+- Credibility Proof Portfolio | SHOCKWAVE Systems: https://shockwave.live/portfolio
 - Privacy Notice | SHOCKWAVE Systems: https://shockwave.live/privacy
-- Mining Consultant Growth Services | SHOCKWAVE Systems: https://shockwave.live/services
+- Credibility Offer Ladder | SHOCKWAVE Systems: https://shockwave.live/services
 - Terms of Use | SHOCKWAVE Systems: https://shockwave.live/terms
 
 ## Service Pages
-- Brand Positioning for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/brand-positioning
-- LinkedIn Growth for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/linkedin-growth-content
-- Web Conversion Systems for Mining Consultants | SHOCKWAVE Systems: https://shockwave.live/services/web-conversion-systems
 
 ## Blog Posts
 - Why Mining Consultants Need a LinkedIn Credibility Engine, Not More Content: https://shockwave.live/linkedin-content-engine-mining-consultants
